@@ -1,0 +1,17 @@
+.underline-line {
+    transform: scaleX(0); /* Initially hide the underline */
+    transition: transform 0.5s ease-out; /* Smooth transition for the underline */
+  }
+  
+  button:hover .underline-line {
+    transform: scaleX(1); /* Show the underline from left to right on hover */
+  }
+  
+  button {
+    transition: transform 0.3s ease-out; /* Smooth scaling of button */
+  }
+  
+  button:hover {
+    transform: scale(0.9); /* Button scales down on hover */
+  }
+  
