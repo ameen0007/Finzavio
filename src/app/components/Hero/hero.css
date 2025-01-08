@@ -158,3 +158,22 @@
 /* 
 
 /* Add to hero.css */
+@keyframes upDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Move up */
+    }
+    100% {
+      transform: translateY(0); /* Move down */
+    }
+  }
+  
+  .animate-up-down {
+    animation: upDown 2s ease-in-out infinite;
+  }
+  
+  .animate-start {
+    animation: upDown 2s ease-in-out infinite;
+  }

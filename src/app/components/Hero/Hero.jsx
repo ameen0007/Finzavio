@@ -7,7 +7,6 @@ import './hero.css';
 import { FaAngleDoubleRight } from "react-icons/fa";
 import 'aos/dist/aos.css'; // Import AOS styles
 import AOS from 'aos';
-import { motion } from 'framer-motion';
 
 // Import the Bricolage Grotesque font
 const bricolageGrotesque = Bricolage_Grotesque({
@@ -32,10 +31,10 @@ export const Hero = () => {
     // Set timeout for the CSS animation to start after 1 second (adjust this as needed)
     const timeout = setTimeout(() => {
       setTriggerAnimation(true);
-    }, 3000); // 1 second delay
+    }, 1500); // 1 second delay
 
     return () => clearTimeout(timeout);
-  }, []);
+  }, [triggerAnimation]);
 
   return (
     <>
@@ -74,85 +73,63 @@ export const Hero = () => {
             alt="logo"
             className="pl-10 w-[600px] h-auto object-cover rounded-lg"
           />
-
-          {/* Glowing Images */}
-          <motion.div className="glow absolute top-0 right-[340px]">
-            <motion.img
-              src="gold.png"
-              alt="gold"
-              initial={{ opacity: 0, y: 100 }} // Start from bottom
-              animate={{ opacity: 1, y: 0 }}   // Move to the top
-              transition={{ duration: 1, ease: 'easeInOut' }}
-              whileInView={{ y: [0, 3, 0], transition: { duration: 1.5, repeat: Infinity } }} // Infinite up and down movement
-              viewport={{ once: false }} // Ensure animation triggers every time the element enters the viewport
-            />
-          </motion.div>
-          <motion.div className="glow absolute bottom-[90px] left-[60px]">
-            <motion.img
-              src="gold.png"
-              alt="gold"
-              initial={{ opacity: 0, y: 100 }} // Start from bottom
-              animate={{ opacity: 1, y: 0 }}   // Move to the top
-              transition={{ duration: 1, ease: 'easeInOut' }}
-              whileInView={{ y: [0, 3, 0], transition: { duration: 1.5, repeat: Infinity } }} // Infinite up and down movement
-              viewport={{ once: false }} // Ensure animation triggers every time the element enters the viewport
-            />
-          </motion.div>
-          <motion.div className="glow absolute bottom-[130px] right-[100px]">
-            <motion.img
-              src="gold.png"
-              alt="gold"
-              initial={{ opacity: 0, y: 100 }} // Start from bottom
-              animate={{ opacity: 1, y: 0 }}   // Move to the top
-              transition={{ duration: 1, ease: 'easeInOut' }}
-              whileInView={{ y: [0, 3, 0], transition: { duration: 1.5, repeat: Infinity } }} // Infinite up and down movement
-              viewport={{ once: false }} // Ensure animation triggers every time the element enters the viewport
-            />
-          </motion.div>
-          <motion.div className="glow absolute bottom-[20px] right-[290px]">
-            <motion.img
-              src="star.png"
-              alt="star"
-              initial={{ opacity: 0, y: 100 }} // Start from bottom
-              animate={{ opacity: 1, y: 0 }}   // Move to the top
-              transition={{ duration: 1, ease: 'easeInOut' }}
-              whileInView={{ y: [0, 3, 0], transition: { duration: 1.5, repeat: Infinity } }} // Infinite up and down movement
-              viewport={{ once: false }} // Ensure animation triggers every time the element enters the viewport
-            />
-          </motion.div>
-          <motion.div className="glow absolute top-[100px] left-[100px]">
-            <motion.img
-              src="star.png"
-              alt="star"
-              initial={{ opacity: 0, y: 100 }} // Start from bottom
-              animate={{ opacity: 1, y: 0 }}   // Move to the top
-              transition={{ duration: 1, ease: 'easeInOut' }}
-              whileInView={{ y: [0, 3, 0], transition: { duration: 1.5, repeat: Infinity } }} // Infinite up and down movement
-              viewport={{ once: false }} // Ensure animation triggers every time the element enters the viewport
-            />
-          </motion.div>
-          <motion.div className="glow absolute top-[190px] right-[0px]">
-            <motion.img
-              src="money.png"
-              alt="money"
-              initial={{ opacity: 0, y: 100 }} // Start from bottom
-              animate={{ opacity: 1, y: 0 }}   // Move to the top
-              transition={{ duration: 1, ease: 'easeInOut' }}
-              whileInView={{ y: [0, 3, 0], transition: { duration: 1.5, repeat: Infinity } }} // Infinite up and down movement
-              viewport={{ once: false }} // Ensure animation triggers every time the element enters the viewport
-            />
-          </motion.div>
-          <motion.div className="glow absolute top-[80px] right-[100px]">
-            <motion.img
-              src="bluel.png"
-              alt="bluel"
-              initial={{ opacity: 0, y: 100 }} // Start from bottom
-              animate={{ opacity: 1, y: 0 }}   // Move to the top
-              transition={{ duration: 1, ease: 'easeInOut' }}
-              whileInView={{ y: [0, 3, 0], transition: { duration: 1.5, repeat: Infinity } }} // Infinite up and down movement
-              viewport={{ once: false }} // Ensure animation triggers every time the element enters the viewport
-            />
-          </motion.div>
+          {/* Glowing images */}
+          <div
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="700"
+            className={`glow absolute top-0 right-[340px] ${triggerAnimation ? 'animate-up-down' : ''}`}
+          >
+            <img src="gold.png" alt="" />
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="700"
+            className={`glow absolute bottom-[90px] left-[60px] ${triggerAnimation ? 'animate-up-down' : ''}`}
+          >
+            <img src="gold.png" alt="" />
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="700"
+            data-aos-duration="700"
+            className={`glow absolute bottom-[130px] right-[100px] ${triggerAnimation ? 'animate-up-down' : ''}`}
+          >
+            <img src="gold.png" alt="" />
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="700"
+            className={`glow absolute bottom-[20px] right-[290px] ${triggerAnimation ? 'animate-up-down' : ''}`}
+          >
+            <img src="star.png" alt="" />
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="700"
+            data-aos-duration="700"
+            className={`glow absolute top-[100px] left-[100px] ${triggerAnimation ? 'animate-up-down' : ''}`}
+          >
+            <img src="star.png" alt="" />
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="800"
+            data-aos-duration="700"
+            className={`glow absolute top-[190px] right-[0px] ${triggerAnimation ? 'animate-up-down' : ''}`}
+          >
+            <img src="money.png" alt="" />
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="800"
+            data-aos-duration="700"
+            className={`glow absolute top-[80px] right-[100px] ${triggerAnimation ? 'animate-up-down' : ''}`}
+          >
+            <img src="bluel.png" alt="" />
+          </div>
         </div>
       </div>
 
