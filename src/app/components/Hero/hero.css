@@ -99,9 +99,9 @@
     width: 30px;
     height: 30px;
     filter: drop-shadow(0 0 1px #ffda46) 
-            drop-shadow(0 0 2px #ffda46)
-            drop-shadow(0 0 40px #ffda46)
-            drop-shadow(0 0 45px #ffda46);
+            drop-shadow(0 0 1px #ffda46)
+            drop-shadow(0 0 28px #ffda46)
+            drop-shadow(0 0 80px #ffda46);
   }
   
   .glow img {

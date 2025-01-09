@@ -64,18 +64,18 @@ export const Hero = () => {
         </div>
 
         {/* Right Section - Image */}
-        <div className=" w-full relative    flex   ">
+        <div className=" w-full relative    min-h-[400px] flex justify-center items-center ">
          
 
          
           <img
-
+             
             data-aos="fade-up"
             data-aos-delay="0"
             data-aos-duration="700"
             src="herologo.png"
             alt="logo"
-            className="pl-10 object-contain rounded-lg  "
+            className="pl-10 object-contain rounded-lg max-w-[520px]  "
           />
           {/* Glowing images */}
           <div
@@ -130,7 +130,7 @@ export const Hero = () => {
             data-aos="fade-up"
             data-aos-delay="800"
             data-aos-duration="700"
-            className={`glow absolute top-[19%] right-[15%] ${triggerAnimation ? 'animate-up-down delay-3' : ''}`}
+            className={`glow absolute top-[10%] right-[15%] ${triggerAnimation ? 'animate-up-down delay-3' : ''}`}
           >
             <img src="bluel.png" alt="" />
           </div>
