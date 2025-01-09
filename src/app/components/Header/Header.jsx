@@ -21,13 +21,22 @@ const [underlineWidth, setUnderlineWidth] = useState(0);
 
   const menuItemsRef = useRef([]);
 
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000, // Animation duration
+  //    // Easing
+  //     once: true, // Whether animation should happen only once
+  //   });
+  // }, []);
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      easing: 'ease-in-out', // Easing
-      // once: true, // Whether animation should happen only once
+      once: true,
+      mirror: false,
+      easing: 'ease-in-out',
     });
-  }, []);
+
+    AOS.refresh();
+},[]);
 
   const handleActiveItem = (item, index) => {
     setActiveItem(item);
