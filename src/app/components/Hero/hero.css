@@ -112,13 +112,12 @@
   .btn-3 {
     
     width: 100%;
-   
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    gap: 30px;
+    gap: 40px;
    
     transition: transform 0.3s ease-in-out;
      /* Slow down the transform effect */
@@ -188,3 +187,351 @@
   .animate-start {
     animation: upDown 2s ease-in-out infinite;
   }
+
+  
+
+  @media screen and (width: 1024px) and (height: 1366px) {
+    /* Styles for devices with 1024px width and 1366px height */
+    /* body {
+    
+      font-size: 18px;
+    } */
+    .hero{
+      flex-direction: column-reverse;
+       width: 70%;
+       margin: auto;
+
+    }
+    .hero .text{
+      text-align: center;
+    }
+    .hero .buttons{
+      justify-content: center;
+    }
+    .btn-3 {
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap onto the next row */
+      gap: 20px;       /* Space between items (optional) */
+    }
+    
+    .btn-3 .item {
+      flex: 1 1 calc(50% - 10px); /* Each item takes 50% width, minus gap */
+      box-sizing: border-box;    /* Include padding/border in width */
+      text-align: center;
+    }
+    
+    .btn-3 .item button {
+      width: 80%; /* Button takes full width of its parent */
+      padding: 10px;
+      border-radius: 10px;
+
+     
+    }
+
+  }
+  @media screen and (max-width: 820px) {
+    .hero{
+      
+      flex-direction: column-reverse;
+       width: 70%;
+       margin: auto;
+       padding-top: 100px;
+       gap: 10px;
+
+    }
+    .hero .text{
+      text-align: center;
+    }
+    .hero .buttons{
+      justify-content: center;
+    }
+    .btn-3 {
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap onto the next row */
+      gap: 20px;       /* Space between items (optional) */
+    }
+    
+    .btn-3 .item {
+      flex: 1 1 calc(50% - 10px); /* Each item takes 50% width, minus gap */
+      box-sizing: border-box;    /* Include padding/border in width */
+      text-align: center;
+    }
+    
+    .btn-3 .item button {
+      width: 80%; /* Button takes full width of its parent */
+      padding: 10px;
+      border-radius: 10px;
+
+     
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .hero{
+      
+      flex-direction: column-reverse;
+       width: 80%;
+       height: 700px;
+     
+       margin: auto;
+       padding-top: 0px;
+      
+       gap: 10px;
+       
+          }
+    .hero .image{
+       width: 80%;
+  
+      
+       margin: auto;
+       position: relative;
+
+    }
+    .hero .image .m1{
+  
+     width: 20px;
+     height: 20px;
+
+   }
+   .hero .image .m1{
+    top:20%;
+    width: 20px;
+    height: 20px;
+
+  }
+  .hero .image .m2{
+   left: 5%;
+    width: 20px;
+    height: 20px;
+    
+
+  }
+  .hero .image .m3{
+    bottom: 17%;
+     width: 20px;
+     height: 20px;
+ 
+   }
+   .hero .image .m4{
+
+     width: 20px;
+     
+     height: 20px;
+ 
+   }
+   .hero .image .m5{
+   
+    top: 40%;
+     width: 20px;
+     height: 20px;
+ 
+   }
+   .hero .image .m6{
+   
+   top: 60%;
+     width: 20px;
+     height: 20px;
+ 
+   }   .hero .image .m7{
+ 
+     width: 20px;
+     height: 20px;
+     top: 35%;
+ 
+   }
+  
+
+   
+
+
+
+
+    .hero .image .images{
+      
+       position: fixed;
+       width: 400px;
+       top: 188px;
+    }
+    .hero .text{
+      text-align: center;
+      width: 100%;
+    }
+    .hero .buttons{
+      justify-content: center;
+    }
+    .btn-3 {
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap onto the next row */
+      gap: 20px;       /* Space between items (optional) */
+    }
+    
+    .btn-3 .item {
+      flex: 1 1 calc(50% - 10px); /* Each item takes 50% width, minus gap */
+      box-sizing: border-box;    /* Include padding/border in width */
+      text-align: center;
+    }
+    
+    .btn-3 .item button {
+      width: 80%; /* Button takes full width of its parent */
+      padding: 10px;
+      border-radius: 10px;
+
+     
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+     
+    .hero{
+      
+      flex-direction: column-reverse;
+       width: 100%;
+      height: auto;
+       
+       margin: auto;
+       padding-top: 0px;
+      
+       gap: 10px;
+       
+          }
+    .hero .image{
+       width: 90%;
+     min-height: 340px;
+  
+       margin: auto;
+       position: relative;
+
+    }
+    .hero{
+      gap: 0px;
+    }
+    .hero .text .p{
+      font-size: 40px;
+    }
+    .hero .text .s{
+      text-align: center;
+      font-size: 13px;
+      line-height: 25px;
+    }
+  
+    .hero .buttons{
+      justify-content: center;
+    }
+   .hero .image .m1{
+    top:9%;
+    left: 55%;
+    width: 20px;
+    height: 20px;
+
+  }
+  .hero .image .m2{
+   left: 7%;
+   bottom: 29%;
+    width: 20px;
+    height: 20px;
+   
+
+  }
+  .hero .image .m3{
+    bottom: 26%;
+     width: 20px;
+     height: 20px;
+   
+ 
+   }
+   .hero .image .m4{
+   
+     width: 20px;
+      bottom: 13%;
+      left: 40%;
+     height: 20px;
+ 
+   }
+   .hero .image .m5{
+   
+    top: 27%;
+     width: 20px;
+     height: 20px;
+ 
+   }
+   .hero .image .m6{
+  
+   top: 48%;
+   right: -4%;
+     width: 20px;
+     height: 20px;
+ 
+   }   .hero .image .m7{
+   
+     width: 20px;
+     height: 20px;
+     top: 27%;
+     
+   }
+  
+   .btn-3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; /* Allow items to wrap onto the next row */
+    gap: 30px;   
+    margin-top: 30px;    /* Space between items (optional) */
+  }
+  
+  .btn-3 .item {
+    width: 100%;
+   margin-bottom: 10px;
+   
+    box-sizing: border-box;   
+    text-align: center;
+  }
+  
+  .btn-3 .item button {
+    width: 100%; /* Button takes full width of its parent */
+    padding: 10px;
+    border-radius: 10px;
+
+   
+  }
+   
+
+
+
+
+    .hero .image .images{
+     position: static;
+ 
+     width: 300px;
+     padding-left: 0px;
+      
+    }
+    .hero .text{
+      text-align: center;
+      width: 100%;
+      
+    }
+    .hero .buttons{
+      justify-content: center;
+    }
+    .btn-3 {
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap onto the next row */
+      gap: 20px;       /* Space between items (optional) */
+    }
+    
+    .btn-3 .item {
+      flex: 1 1 calc(50% - 10px); /* Each item takes 50% width, minus gap */
+      box-sizing: border-box;    /* Include padding/border in width */
+      text-align: center;
+    }
+    
+    .btn-3 .item button {
+      width: 80%; /* Button takes full width of its parent */
+      padding: 10px;
+      border-radius: 10px;
+
+     
+    }
+
+  }
+  

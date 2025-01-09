@@ -15,3 +15,27 @@
     transform: scale(0.9); /* Button scales down on hover */
   }
   
+  @media screen and (max-width: 820px) {
+    .header{
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    .right{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+  
+    .header{
+      display: none;
+    }
+    
+  }
+  @media screen and (min-width: 461px) {
+  
+    .mobile{
+      display: none;
+    }
+    
+  }
