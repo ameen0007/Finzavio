@@ -11,36 +11,32 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const Ralewayf = Raleway({
   subsets: ['latin'],
+  display: 'swap', // Ensures the font is rendered immediately
 });
 
 export const Header = () => {
   const [activeItem, setActiveItem] = useState('Home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [underlineLeft, setUnderlineLeft] = useState(0);
-const [underlineWidth, setUnderlineWidth] = useState(0);
+  const [underlineWidth, setUnderlineWidth] = useState(0);
 
   const menuItemsRef = useRef([]);
 
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 1000, // Animation duration
-  //    // Easing
-  //     once: true, // Whether animation should happen only once
-  //   });
-  // }, []);
   useEffect(() => {
+    // Initialize AOS
     AOS.init({
       once: true,
       mirror: false,
       easing: 'ease-in-out',
+      duration: 700, // Smoother AOS animations
     });
 
-    AOS.refresh();
-},[]);
+    return () => AOS.refresh(); // Refresh AOS on unmount
+  }, []);
 
   const handleActiveItem = (item, index) => {
     setActiveItem(item);
-    setIsMobileMenuOpen(false)
+    setIsMobileMenuOpen(false);
     const element = menuItemsRef.current[index];
     if (element) {
       setUnderlineLeft(element.offsetLeft);
@@ -48,75 +44,73 @@ const [underlineWidth, setUnderlineWidth] = useState(0);
     }
   };
 
-
-useEffect(() => {
-  // Set initial underline position (default: first item)
-  const element = menuItemsRef.current[0]; // Default to 'Home'
-  if (element) {
-    setUnderlineLeft(element.offsetLeft);
-    setUnderlineWidth(element.offsetWidth);
-  }
-}, []);
+  useEffect(() => {
+    // Set initial underline position (default: first item)
+    const element = menuItemsRef.current[0]; // Default to 'Home'
+    if (element) {
+      setUnderlineLeft(element.offsetLeft);
+      setUnderlineWidth(element.offsetWidth);
+    }
+  }, []);
 
   // Animation variants for the mobile menu
   const menuVariants = {
-    hidden: { x: '100%' }, // Start off-screen (right)
-    visible: { x: 0, transition: { duration: 0.5 } }, // Slide in
-    exit: { x: '100%', transition: { duration: 0.5 } }, // Slide out
+    hidden: { x: '100%', opacity: 0, transform: 'translate3d(0, 0, 0)' },
+    visible: { x: 0, opacity: 1, transform: 'translate3d(0, 0, 0)', transition: { duration: 0.5 } },
+    exit: { x: '100%', opacity: 0, transform: 'translate3d(0, 0, 0)', transition: { duration: 0.5 } },
   };
 
   return (
     <>
       {/* Desktop Menu */}
       <div
-      data-aos="fade-down"
-      className="header w-full items-center flex justify-between pt-4"
-    >
-      {/* Logo */}
-      
-      {/* Navigation and Connect Us */}
-      <div className="relative flex items-center justify-between w-full">
-      <div className="pl-2 pt-5">
-        <img className="w-16" src="mainlogo.png" alt="Logo" />
+        data-aos="fade-down"
+        className="header w-full items-center flex justify-between pt-4"
+      >
+        {/* Logo */}
+        <div className="pl-2 pt-5">
+          <img className="w-16" src="mainlogo.png" alt="Logo" />
+        </div>
+
+        {/* Navigation and Connect Us */}
+        <div className="relative flex items-center justify-between w-full">
+          {/* Navigation Items */}
+          <ul className="text-[#f3f3f1] flex gap-10 text-[14px]">
+            {['Home', 'About', 'Services'].map((item, index) => (
+              <li
+                key={item}
+                ref={(el) => (menuItemsRef.current[index] = el)}
+                className={`cursor-pointer relative ${
+                  activeItem === item ? 'text-[#ffda46]' : ''
+                } hover:text-[#ffda46]`}
+                onClick={() => handleActiveItem(item, index)}
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+
+          {/* Connect Us Button */}
+          <button
+            ref={(el) => (menuItemsRef.current[3] = el)} // Connect Us is the 4th item
+            className={`text-[#f3f3f1] text-[14px] outline-none transition-all duration-500 px-4 py-1 relative ${
+              activeItem === 'Connect Us' ? 'text-[#ffda46]' : ''
+            } hover:text-[#ffda46]`}
+            onClick={() => handleActiveItem('Connect Us', 3)}
+          >
+            Connect <span className="text-[#ffda46]">Us</span>
+          </button>
+
+          {/* Dynamic Underline */}
+          <div
+            className="absolute bottom-[-2px] h-[2px] bg-[#ffda46] transition-all duration-500"
+            style={{
+              width: `${underlineWidth}px`,
+              left: `${underlineLeft}px`,
+            }}
+          />
+        </div>
       </div>
-        {/* Navigation Items */}
-        <ul className="text-[#f3f3f1] flex gap-10 text-[14px]">
-          {['Home', 'About', 'Services'].map((item, index) => (
-            <li
-              key={item}
-              ref={(el) => (menuItemsRef.current[index] = el)}
-              className={`cursor-pointer relative ${
-                activeItem === item ? 'text-[#ffda46]' : ''
-              } hover:text-[#ffda46]`}
-              onClick={() => handleActiveItem(item, index)}
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
-
-        {/* Connect Us Button */}
-        <button
-          ref={(el) => (menuItemsRef.current[3] = el)} // Connect Us is the 4th item
-          className={`text-[#f3f3f1] text-[14px] outline-none transition-all duration-500 px-4 py-1 relative ${
-            activeItem === 'Connect Us' ? 'text-[#ffda46]' : ''
-          } hover:text-[#ffda46]`}
-          onClick={() => handleActiveItem('Connect Us', 3)}
-        >
-          Connect <span className="text-[#ffda46]">Us</span>
-        </button>
-
-        {/* Dynamic Underline */}
-        <div
-          className="absolute bottom-[-2px] h-[2px] bg-[#ffda46] transition-all duration-500"
-          style={{
-            width: `${underlineWidth}px`,
-            left: `${underlineLeft}px`,
-          }}
-        />
-      </div>
-    </div>
-
 
       {/* Mobile Menu */}
       <div
@@ -141,16 +135,12 @@ useEffect(() => {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-          className={`${Ralewayf.className} fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-start z-50`}
-          variants={menuVariants}
-          initial="hidden"
-          animate="visible"
-          exit="exit"
-          
+            className={`${Ralewayf.className} fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-start z-50`}
+            variants={menuVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
           >
-            
-           
-          
             <p
               className="absolute top-6 right-6 text-[#ffda46] text-[40px] cursor-pointer"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -158,7 +148,7 @@ useEffect(() => {
               <RiCloseLine />
             </p>
             <ul className="text-[#f3f3f1] mt-32 text-[18px] space-y-6 w-[80%]">
-              {['Home', 'About', 'Services', 'Connect Us'].map((item) => (
+              {['Home', 'About', 'Services', 'Connect Us'].map((item, index) => (
                 <li
                   key={item}
                   className={`cursor-pointer py-2 px-4 rounded-full w-3/4 mx-auto text-center ${
@@ -166,7 +156,7 @@ useEffect(() => {
                       ? 'bg-[#ffda46] text-black'
                       : 'hover:text-[#ffda46]'
                   }`}
-                  onClick={() => handleActiveItem(item)}
+                  onClick={() => handleActiveItem(item, index)}
                 >
                   {item}
                 </li>
