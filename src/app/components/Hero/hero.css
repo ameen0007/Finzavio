@@ -534,4 +534,40 @@
     }
 
   }
+  @keyframes fade-up-right {
+    0% {
+      opacity: 0;
+      transform: translate3d(-20px, 20px, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .items {
+    opacity: 0; /* Ensures animations are visible */
+    animation-fill-mode: forwards; /* Keeps final animation state */
+  }
+  
+  .animate-fade-up-right {
+    animation: fade-up-right 0.7s ease-out;
+    animation-fill-mode: forwards; /* Ensures the animation doesn't reset */
+  }
+  
+  .delay-500 {
+    animation-delay: 0.5s;
+  }
+  
+  .delay-400 {
+    animation-delay: 0.4s;
+  }
+  
+  .delay-300 {
+    animation-delay: 0.3s;
+  }
+  
+  .delay-200 {
+    animation-delay: 0.2s;
+  }
   

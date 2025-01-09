@@ -17,7 +17,9 @@ const Home = () => {
        
     </div>
 
+      <div className='w-full h-screen bg-slate-300'>
 
+      </div>
    
   </div>
    

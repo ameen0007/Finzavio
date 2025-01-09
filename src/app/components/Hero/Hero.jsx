@@ -137,21 +137,21 @@ export const Hero = () => {
         </div>
       </div>
 
-      <div className="pt-4 pb-10 btn-3 text-[#f3f3f1]">
-         <div className='item'>
-         <button >FINANCE ADVISOR</button>
-         </div>
-       <div className='item'>
-       <button >SWP Calculator</button>
-       </div>
-       <div className='item'>
-       <button >SIP Calculator</button>
-       </div>
-        <div className='item'>
-        <button >FINANCE ANALYST</button>
-        </div>
-       
-      </div>
+      <div className="pb-10 btn-3 text-[#f3f3f1]">
+  <div className="items animate-fade-up-right delay-500">
+    <button>FINANCE ADVISOR</button>
+  </div>
+  <div className="items animate-fade-up-right delay-400">
+    <button>SWP Calculator</button>
+  </div>
+  <div className="items animate-fade-up-right delay-300">
+    <button>SIP Calculator</button>
+  </div>
+  <div className="items animate-fade-up-right delay-200">
+    <button>FINANCE ANALYST</button>
+  </div>
+</div>
+
     </>
   );
 };
