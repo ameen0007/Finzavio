@@ -38,9 +38,9 @@ export const Hero = () => {
 
   return (
     <>
-      <div className={`${bricolageGrotesque.className} flex gap-10 justify-between px-[60px] py-20`}>
+      <div className={`${bricolageGrotesque.className} flex gap-20 justify-between `}>
         {/* Left Section - Content */}
-        <div className="w-full pt-8 pb-10 flex flex-col justify-between h-[500px]">
+        <div className="w-full   flex flex-col justify-between  ">
           <p className="text-6xl text-[#f3f3f1] leading-tight tracking-normal" data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-delay="0" data-aos-duration="700">
             Where <span className="text-[#ffda46]">Peace and Happiness </span>
           </p>
@@ -50,11 +50,11 @@ export const Hero = () => {
           <p data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400" data-aos-duration="700" className={`${Ralewayf.className} mt-7 text-white text-base leading-7 tracking-wider`}>
             Discover a world where managing your finances brings clarity and joy. Our tailored solutions simplify your journey to financial stability, allowing you to focus on what matters most
           </p>
-          <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" className={`${Ralewayf.className} w-full h-11 mt-7 flex justify-start text-[15px] gap-7 text-[#f3f3f1]`}>
+          <div  data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" className={`${Ralewayf.className} w-full h-11  flex justify-start text-[15px] gap-7 mt-7 text-[#f3f3f1]`}>
             <div className="btn-1 active:scale-95">
               <p>Know More</p>
             </div>
-            <div className="btn-2 active:scale-95">
+            <div className="btn-2 active:scale-95 ">
               <p className="p-[7px] px-[17px] bg-[#ffda46]">
                 <FaAngleDoubleRight />
               </p>
@@ -64,21 +64,22 @@ export const Hero = () => {
         </div>
 
         {/* Right Section - Image */}
-        <div className="pt-12 w-full relative">
+        <div className=" w-full relative  bg-slate-300 flex   ">
           <img
+
             data-aos="fade-up"
             data-aos-delay="0"
             data-aos-duration="700"
             src="herologo.png"
             alt="logo"
-            className="pl-10 w-[600px] h-auto object-cover rounded-lg"
+            className="pl-10 object-cover rounded-lg max-w-[700px]"
           />
           {/* Glowing images */}
           <div
             data-aos="fade-up"
             data-aos-delay="500"
             data-aos-duration="700"
-            className={`glow absolute top-0 right-[340px] ${triggerAnimation ? 'animate-up-down delay-0' : ''}`}
+            className={`glow absolute top-[-1%] right-[42%] ${triggerAnimation ? 'animate-up-down delay-0' : ''}`}
           >
             <img src="gold.png" alt="" />
           </div>
@@ -133,7 +134,7 @@ export const Hero = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center gap-10 pt-4 pb-10 btn-3  text-[#f3f3f1]">
+      <div className="flex justify-center items-center gap-10 pt-4 pb-10 btn-3   text-[#f3f3f1]">
         <button >FINANCE ADVISOR</button>
         <button >SWP Calculator</button>
         <button >SIP Calculator</button>

@@ -7,6 +7,13 @@
    background-size:contain;
    background-position: center;
    background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
   
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 30px;
 
 }
