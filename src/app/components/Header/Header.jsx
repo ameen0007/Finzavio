@@ -3,7 +3,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './header.css'
 import { Raleway } from 'next/font/google';
-
+import 'aos/dist/aos.css'; // Import AOS styles
+import AOS from 'aos';
 const Ralewayf = Raleway({
   subsets: ['latin'],
 })
@@ -13,8 +14,15 @@ export const Header = () => {
   const [activeItem, setActiveItem] = useState("Home");
   const [underlineStyle, setUnderlineStyle] = useState({});
   const menuItemsRef = useRef([]);
+  
+   useEffect(() => {
+      AOS.init({
+        duration: 1000, // Animation duration
+        easing: 'ease-in-out', // Easing
+        once: true, // Whether animation should happen only once
+      });
 
-
+    }, []);
 
   const handleActiveItem = (item) => {
     setActiveItem(item);
@@ -36,7 +44,7 @@ export const Header = () => {
   }, [activeItem]);
 
   return (
-    <div  className={`${Ralewayf.className} w-full px-[50px] items-center py-5 flex justify-between`}>
+    <div  data-aos="fade-down" className={`${Ralewayf.className}  w-full px-[50px] items-center py-5 flex justify-between`}>
       <div className='pl-2 pt-5'>
         <img  src="mainlogo.png" alt="Logo"  />
       </div>

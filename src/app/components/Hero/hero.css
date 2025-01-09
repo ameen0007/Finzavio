@@ -173,6 +173,25 @@
   .animate-up-down {
     animation: upDown 2s ease-in-out infinite;
   }
+  .delay-0 {
+    animation-delay: 0s;
+  }
+  
+  .delay-1 {
+    animation-delay: 500ms;
+  }
+  
+  .delay-2 {
+    animation-delay: 1s;
+  }
+  
+  .delay-3 {
+    animation-delay: 1.5ms;
+  }
+  
+  .delay-4 {
+    animation-delay: 2s;
+  }
   
   .animate-start {
     animation: upDown 2s ease-in-out infinite;

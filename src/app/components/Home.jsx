@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
   <div className='w-full bg-[#0b0b0b]'>
-      <div className='main-div w-full bg-[#0b0b0b] h-screen max-w-[1440px] m-auto  '>
+      <div className='main-div w-full bg-[#0b0b0b] h-screen max-w-[1440px] m-auto '>
        <Header/>
          <Hero/>
     </div>
