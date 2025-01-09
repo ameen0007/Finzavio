@@ -82,7 +82,7 @@ export const Hero = () => {
             data-aos="fade-up"
             data-aos-delay="500"
             data-aos-duration="700"
-            className={`glow absolute top-[-1%] right-[42%] ${triggerAnimation ? 'animate-up-down delay-0' : ''}`}
+            className={`glow absolute top-[-10%] right-[38%] ${triggerAnimation ? 'animate-up-down delay-0' : ''}`}
           >
             <img src="gold.png" alt="" />
           </div>
@@ -90,7 +90,7 @@ export const Hero = () => {
             data-aos="fade-up"
             data-aos-delay="600"
             data-aos-duration="700"
-            className={`glow absolute bottom-[15%] left-[7%] ${triggerAnimation ? 'animate-up-down delay-1' : ''}`}
+            className={`glow absolute bottom-[23%] left-[12%] ${triggerAnimation ? 'animate-up-down delay-3' : ''}`}
           >
             <img src="gold.png" alt="" />
           </div>
@@ -106,7 +106,7 @@ export const Hero = () => {
             data-aos="fade-up"
             data-aos-delay="600"
             data-aos-duration="700"
-            className={`glow absolute bottom-[0%] right-[50%] ${triggerAnimation ? 'animate-up-down delay-3' : ''}`}
+            className={`glow absolute bottom-[1%] right-[50%] ${triggerAnimation ? 'animate-up-down delay-3' : ''}`}
           >
             <img src="star.png" alt="" />
           </div>
@@ -114,23 +114,23 @@ export const Hero = () => {
             data-aos="fade-up"
             data-aos-delay="700"
             data-aos-duration="700"
-            className={`glow absolute top-[20%] left-[17%] ${triggerAnimation ? 'animate-up-down delay-1' : ''}`}
+            className={`glow absolute top-[22%] left-[20%] ${triggerAnimation ? 'animate-up-down delay-1' : ''}`}
           >
             <img src="star.png" alt="" />
           </div>
-          {/* <div
+          <div
             // data-aos="fade-up"
             // data-aos-delay="800"
             // data-aos-duration="700"
-            className={`glow absolute top-[45%] right-[-10%] ${triggerAnimation ? 'animate-up-down delay-1' : ''}`}
+            className={`glow absolute top-[46%] right-[-5%] ${triggerAnimation ? 'animate-up-down delay-1' : ''}`}
           >
             <img src="money.png" alt="" />
-          </div> */}
+          </div>
           <div
             data-aos="fade-up"
             data-aos-delay="800"
             data-aos-duration="700"
-            className={`glow absolute top-[10%] right-[15%] ${triggerAnimation ? 'animate-up-down delay-3' : ''}`}
+            className={`glow absolute top-[14%] right-[15%] ${triggerAnimation ? 'animate-up-down delay-3' : ''}`}
           >
             <img src="bluel.png" alt="" />
           </div>
