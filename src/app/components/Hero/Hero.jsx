@@ -64,7 +64,10 @@ export const Hero = () => {
         </div>
 
         {/* Right Section - Image */}
-        <div className=" w-full relative  bg-slate-300 flex   ">
+        <div className=" w-full relative   flex   ">
+         
+
+         
           <img
 
             data-aos="fade-up"
@@ -72,7 +75,7 @@ export const Hero = () => {
             data-aos-duration="700"
             src="herologo.png"
             alt="logo"
-            className="pl-10 object-cover rounded-lg max-w-[700px]"
+            className="pl-10 object-contain rounded-lg "
           />
           {/* Glowing images */}
           <div
@@ -87,7 +90,7 @@ export const Hero = () => {
             data-aos="fade-up"
             data-aos-delay="600"
             data-aos-duration="700"
-            className={`glow absolute bottom-[90px] left-[60px] ${triggerAnimation ? 'animate-up-down delay-1' : ''}`}
+            className={`glow absolute bottom-[15%] left-[7%] ${triggerAnimation ? 'animate-up-down delay-1' : ''}`}
           >
             <img src="gold.png" alt="" />
           </div>
@@ -95,7 +98,7 @@ export const Hero = () => {
             data-aos="fade-up"
             data-aos-delay="700"
             data-aos-duration="700"
-            className={`glow absolute bottom-[130px] right-[100px] ${triggerAnimation ? 'animate-up-down delay-2' : ''}`}
+            className={`glow absolute bottom-[25%] right-[16%] ${triggerAnimation ? 'animate-up-down delay-2' : ''}`}
           >
             <img src="gold.png" alt="" />
           </div>
@@ -103,7 +106,7 @@ export const Hero = () => {
             data-aos="fade-up"
             data-aos-delay="600"
             data-aos-duration="700"
-            className={`glow absolute bottom-[20px] right-[290px] ${triggerAnimation ? 'animate-up-down delay-3' : ''}`}
+            className={`glow absolute bottom-[0%] right-[50%] ${triggerAnimation ? 'animate-up-down delay-3' : ''}`}
           >
             <img src="star.png" alt="" />
           </div>
@@ -111,7 +114,7 @@ export const Hero = () => {
             data-aos="fade-up"
             data-aos-delay="700"
             data-aos-duration="700"
-            className={`glow absolute top-[100px] left-[100px] ${triggerAnimation ? 'animate-up-down delay-1' : ''}`}
+            className={`glow absolute top-[20%] left-[17%] ${triggerAnimation ? 'animate-up-down delay-1' : ''}`}
           >
             <img src="star.png" alt="" />
           </div>
@@ -119,7 +122,7 @@ export const Hero = () => {
             data-aos="fade-up"
             data-aos-delay="800"
             data-aos-duration="700"
-            className={`glow absolute top-[190px] right-[0px] ${triggerAnimation ? 'animate-up-down delay-1' : ''}`}
+            className={`glow absolute top-[45%] right-[0%] ${triggerAnimation ? 'animate-up-down delay-1' : ''}`}
           >
             <img src="money.png" alt="" />
           </div>
@@ -127,7 +130,7 @@ export const Hero = () => {
             data-aos="fade-up"
             data-aos-delay="800"
             data-aos-duration="700"
-            className={`glow absolute top-[80px] right-[100px] ${triggerAnimation ? 'animate-up-down delay-3' : ''}`}
+            className={`glow absolute top-[19%] right-[15%] ${triggerAnimation ? 'animate-up-down delay-3' : ''}`}
           >
             <img src="bluel.png" alt="" />
           </div>

@@ -44,7 +44,7 @@ export const Header = () => {
   }, [activeItem]);
 
   return (
-    <div  data-aos="fade-down" className={`${Ralewayf.className}  w-full items-center flex justify-between pt-4 mb-5`}>
+    <div  data-aos="fade-down" className={`${Ralewayf.className}  w-full items-center flex justify-between pt-4 `}>
       <div className='pl-2 pt-5'>
         <img  src="mainlogo.png" alt="Logo"  />
       </div>
