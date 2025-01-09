@@ -46,11 +46,11 @@ export const Header = () => {
   return (
     <div  data-aos="fade-down" className={`${Ralewayf.className}  w-full items-center flex justify-between pt-4 `}>
       <div className='pl-2 pt-5'>
-        <img  src="mainlogo.png" alt="Logo"  />
+        <img className='w-16'  src="mainlogo.png" alt="Logo"  />
       </div>
 
       <div className="relative">
-        <ul className="text-[#f3f3f1] flex gap-10 text-[18px]">
+        <ul className="text-[#f3f3f1] flex gap-10 text-[14px]">
           <li
             ref={(el) => (menuItemsRef.current[0] = el)} // Attach ref for Home
             className={`cursor-pointer relative ${activeItem === "Home" ? "text-[#ffda46]" : ""} hover:text-[#ffda46]`}
@@ -83,7 +83,7 @@ export const Header = () => {
         />
       </div>
       <div className="text-[#f3f3f1]">
-  <button className="text-[18px] outline-none transition-all duration-500 px-4 py-1 relative">
+  <button className="text-[14px] outline-none transition-all duration-500 px-4 py-1 relative">
     Connect <span className="text-[#ffda46]">Us</span>
     <span className="underline-line absolute left-0 bottom-0 w-full h-0.5 bg-[#ffda46] transform scale-x-0 origin-left transition-all duration-500"></span>
   </button>

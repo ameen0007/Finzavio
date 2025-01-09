@@ -25,7 +25,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    border: 2.5px solid transparent;
+    border: 1px solid transparent;
     background: linear-gradient(45deg, #8c8c8c, #545653) border-box;
     -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
     mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
@@ -76,7 +76,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    border: 2.5px solid transparent;
+    border: 1px solid transparent;
     background: linear-gradient(45deg, #8c8c8c, #545653) border-box;
     -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
     mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
@@ -130,10 +130,10 @@
    background-color:#333334 ;
     border-radius: 11px;
     color: #0b0b0b;
-    font-size: 16px;
+    font-size: 14px;
    
     color: #f3f3f1;
-    border: 2px solid #6c6c6c;
+    border: 1px solid #6c6c6c;
     transition: transform 0.3s ease-in-out;
     
 }
@@ -142,7 +142,7 @@
 
 .btn-3 button:hover {
   transform: scale(0.90); /* Smooth scale effect */
-  border: 2px solid #ffda44;
+  border: 1px solid #ffda44;
   transition: all 0.3s ease-in-out; /* Applies transition to all properties */
 }
 
