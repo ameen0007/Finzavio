@@ -12,6 +12,9 @@ const Home = () => {
       <div className='main-div  bg-[#0b0b0b] w-full  h-auto  max-w-[1440px] m-auto '>
        <Header/>
          <Hero/>
+         <div className='w-full h-screen bg-slate-900'>
+         <h1 className='text-white'>hii</h1>
+         </div>
     </div>
   </div>
    
