@@ -108,55 +108,43 @@
     border: none;
   }
   .btn-3 {
-    position: relative;
-    background-color: #333334;
+    
+    width: 100%;
+   
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    gap: 20px;
+    gap: 30px;
    
-    padding: 10px 40px;
-    transition: transform 0.3s ease-in-out; /* Slow down the transform effect */
+    transition: transform 0.3s ease-in-out;
+     /* Slow down the transform effect */
 }
 
-.btn-3 p {
-    margin: 0;
-    z-index: 1;
-    position: relative;
-    border-radius: 7px;
+.btn-3 button {
+  
+  padding: 10px 40px;
+   background-color:#333334 ;
+    border-radius: 10px;
     color: #0b0b0b;
     font-size: 18px;
     text-align: center;
+    color: #f3f3f1;
+    border: 2px solid #6c6c6c;
+    transition: transform 0.3s ease-in-out;
+    
 }
 
-.btn-3::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    border-radius: 10px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 2.5px solid transparent;
-    background: linear-gradient(45deg, #8c8c8c, #545653) border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: destination-out;
-    mask-composite: exclude;
-    animation: rotate 4s linear infinite;
-    transition: background 0.3s ease-in-out; /* Slow down the background change */
+
+
+.btn-3 button:hover {
+  transform: scale(0.90); /* Smooth scale effect */
+  border: 2px solid #ffda44;
+  transition: all 0.3s ease-in-out; /* Applies transition to all properties */
 }
 
-.btn-3:hover {
-    transform: scale(0.95); /* Smooth scale effect */
-}
 
-.btn-3:hover::before {
-    background: linear-gradient(45deg, #ffda44, #ffda45) border-box;
-    transition: background 0.5s ease-out; /* Slow down the hover background animation */
-}
 /* 
 
 /* Add to hero.css */
