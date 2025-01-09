@@ -25,7 +25,7 @@ const [underlineWidth, setUnderlineWidth] = useState(0);
     AOS.init({
       duration: 1000, // Animation duration
       easing: 'ease-in-out', // Easing
-      once: true, // Whether animation should happen only once
+      // once: true, // Whether animation should happen only once
     });
   }, []);
 
