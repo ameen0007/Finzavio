@@ -41,21 +41,21 @@ export const Hero = () => {
       <div className={`${bricolageGrotesque.className} flex gap-20 justify-between `}>
         {/* Left Section - Content */}
         <div className="w-full   flex flex-col justify-between  ">
-          <p className="text-6xl text-[#f3f3f1] leading-tight tracking-normal" data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-delay="0" data-aos-duration="700">
+          <p className="text-5xl text-[#f3f3f1] leading-tight tracking-normal" data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-delay="0" data-aos-duration="700">
             Where <span className="text-[#ffda46]">Peace and Happiness </span>
           </p>
-          <p data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200" data-aos-duration="700" className="text-6xl text-[#f3f3f1] leading-tight tracking-normal">
+          <p data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200" data-aos-duration="700" className="text-5xl text-[#f3f3f1] leading-tight tracking-normal">
             Meet Finance
           </p>
-          <p data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400" data-aos-duration="700" className={`${Ralewayf.className} mt-7 text-white text-base leading-7 tracking-wider`}>
+          <p data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400" data-aos-duration="700" className={`${Ralewayf.className} mt-7  text-white text-sm leading-7 tracking-wider`}>
             Discover a world where managing your finances brings clarity and joy. Our tailored solutions simplify your journey to financial stability, allowing you to focus on what matters most
           </p>
-          <div  data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" className={`${Ralewayf.className} w-full h-11  flex justify-start text-[15px] gap-7 mt-7 text-[#f3f3f1]`}>
+          <div  data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" className={`${Ralewayf.className} w-full h-9  flex justify-start gap-7 mt-7 text-[#f3f3f1]`}>
             <div className="btn-1 active:scale-95">
               <p>Know More</p>
             </div>
             <div className="btn-2 active:scale-95 ">
-              <p className="p-[7px] px-[17px] bg-[#ffda46]">
+              <p className="p-[5px] px-[13px] bg-[#ffda46]">
                 <FaAngleDoubleRight />
               </p>
               <h4 className="text-[#f3f3f1]">Contact Us</h4>
@@ -64,7 +64,7 @@ export const Hero = () => {
         </div>
 
         {/* Right Section - Image */}
-        <div className=" w-full relative   flex   ">
+        <div className=" w-full relative    flex   ">
          
 
          
@@ -75,7 +75,7 @@ export const Hero = () => {
             data-aos-duration="700"
             src="herologo.png"
             alt="logo"
-            className="pl-10 object-contain rounded-lg "
+            className="pl-10 object-contain rounded-lg  "
           />
           {/* Glowing images */}
           <div
@@ -98,7 +98,7 @@ export const Hero = () => {
             data-aos="fade-up"
             data-aos-delay="700"
             data-aos-duration="700"
-            className={`glow absolute bottom-[25%] right-[16%] ${triggerAnimation ? 'animate-up-down delay-2' : ''}`}
+            className={`glow absolute bottom-[20%] right-[16%] ${triggerAnimation ? 'animate-up-down delay-2' : ''}`}
           >
             <img src="gold.png" alt="" />
           </div>
@@ -118,14 +118,14 @@ export const Hero = () => {
           >
             <img src="star.png" alt="" />
           </div>
-          <div
-            data-aos="fade-up"
-            data-aos-delay="800"
-            data-aos-duration="700"
-            className={`glow absolute top-[45%] right-[0%] ${triggerAnimation ? 'animate-up-down delay-1' : ''}`}
+          {/* <div
+            // data-aos="fade-up"
+            // data-aos-delay="800"
+            // data-aos-duration="700"
+            className={`glow absolute top-[45%] right-[-10%] ${triggerAnimation ? 'animate-up-down delay-1' : ''}`}
           >
             <img src="money.png" alt="" />
-          </div>
+          </div> */}
           <div
             data-aos="fade-up"
             data-aos-delay="800"

@@ -1,13 +1,14 @@
 .btn-1 {
     position: relative;
-    padding: 15px 30px;
+    padding: 5px 25px;
     background-color: #333334;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out; /* Slow down the transform effect */
+    transition: transform 0.3s ease-in-out;
+    font-size: 12px; /* Slow down the transform effect */
 }
 
 .btn-1 p {
@@ -53,6 +54,7 @@
     align-items: center;
     border-radius: 10px;
     gap: 20px;
+    font-size: 12px;
     padding: 14px 20px 14px 6px;
     transition: transform 0.3s ease-in-out; /* Slow down the transform effect */
 }
@@ -63,7 +65,7 @@
     position: relative;
     border-radius: 7px;
     color: #0b0b0b;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .btn-2::before {
