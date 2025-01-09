@@ -133,7 +133,7 @@ export const Hero = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center gap-10 mt-4 pb-10 btn-3  text-[#f3f3f1]">
+      <div className="flex justify-center items-center gap-10 pt-4 pb-10 btn-3  text-[#f3f3f1]">
         <button >FINANCE ADVISOR</button>
         <button >SWP Calculator</button>
         <button >SIP Calculator</button>
