@@ -94,7 +94,26 @@
     background: linear-gradient(45deg, #ffda44, #ffda45) border-box;
     transition: background 0.5s ease-out; /* Slow down the hover background animation */
 }
+.glow img {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+}
 
+.images {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 .glow {
     width: 30px;
     height: 30px;
