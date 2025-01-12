@@ -344,14 +344,16 @@
 
    
 
-
+   .btn-3{
+         margin-top: 30px;
+   }
 
 
     .hero .image .images{
       
-       position: fixed;
+       position: absolute;
        width: 400px;
-       top: 188px;
+       top: 125px;
     }
     .hero .text{
       text-align: center;
@@ -475,18 +477,21 @@
     flex-direction: column;
     flex-wrap: wrap; /* Allow items to wrap onto the next row */
     gap: 30px;   
-    margin-top: 30px;    /* Space between items (optional) */
+    margin-top: 30px;  
+    width: 100%;
+   
   }
   
-  .btn-3 .item {
+  .btn-3 .items {
     width: 100%;
    margin-bottom: 10px;
    
     box-sizing: border-box;   
     text-align: center;
   }
+
   
-  .btn-3 .item button {
+  .btn-3 .items button {
     width: 100%; /* Button takes full width of its parent */
     padding: 10px;
     border-radius: 10px;

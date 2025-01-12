@@ -29,7 +29,14 @@
   /* @media screen and (max-width: 820px) {
   
  } */
+ @media screen and (max-width: 840px) { 
+   .main-div{
+     
+      min-height: 100vh;
+      height: auto;
+   } 
 
+ } 
 
  @media screen and (max-width: 768px) { 
    .main-div{

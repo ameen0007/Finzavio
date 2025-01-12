@@ -21,20 +21,32 @@ const Ralewayf = Raleway({
 export const Hero = () => {
   const [triggerAnimation, setTriggerAnimation] = useState(false);
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration
-      easing: 'ease-in-out', // Easing
-      once: true, // Whether animation should happen only once
-    });
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000, // Animation duration
+  //     easing: 'ease-in-out', // Easing
+  //     once: true, // Whether animation should happen only once
+  //   });
 
     // Set timeout for the CSS animation to start after 1 second (adjust this as needed)
-    const timeout = setTimeout(() => {
-      setTriggerAnimation(true);
-    }, 1500); // 1 second delay
+   
 
-    return () => clearTimeout(timeout);
-  }, [triggerAnimation]);
+    // return () => clearTimeout(timeout);
+  // }, []);
+    useEffect(() => {
+      AOS.init({
+        once: true,
+        mirror: false,
+        easing: 'ease-in-out',
+      });
+
+      const timeout = setTimeout(() => {
+        setTriggerAnimation(true);
+      }, 1500); // 1 second delay
+
+      AOS.refresh();
+      return () => clearTimeout(timeout);
+  },[triggerAnimation]);
 
   return (
     <>
@@ -137,7 +149,7 @@ export const Hero = () => {
         </div>
       </div>
 
-      <div className="pb-10 btn-3 text-[#f3f3f1]">
+      <div className="pb-10 btn-3  text-[#f3f3f1]">
   <div className="items animate-fade-up-right delay-500">
     <button>FINANCE ADVISOR</button>
   </div>
