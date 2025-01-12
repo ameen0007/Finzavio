@@ -40,13 +40,13 @@ export const Hero = () => {
         easing: 'ease-in-out',
       });
 
-      const timeout = setTimeout(() => {
-        setTriggerAnimation(true);
-      }, 1500); // 1 second delay
+      // const timeout = setTimeout(() => {
+      //   setTriggerAnimation(true);
+      // }, 1500); // 1 second delay
 
-      AOS.refresh();
-      return () => clearTimeout(timeout);
-  },[triggerAnimation]);
+      // AOS.refresh();
+      // return () => clearTimeout(timeout);
+  },[]);
 
   return (
     <>
