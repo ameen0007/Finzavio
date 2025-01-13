@@ -24,7 +24,7 @@ export const Hero = () => {
       <div className={`${bricolageGrotesque.className} flex gap-20 justify-between hero `}>
         {/* Left Section - Content */}
         <div className="w-full text flex flex-col justify-between ">
-          <p className="text-5xl p text-[#f3f3f1]  bottom-to-top1 delay1-2  leading-tight tracking-normal">
+          <p className="text-5xl p text-[#f3f3f1]  bottom-to-top1 delay1-3  leading-tight tracking-normal">
             Where <span className= "  text-[#ffda46]">Peace and Happiness</span>
           </p>
           <p className="p text-5xl bottom-to-top1 delay1-3  text-[#f3f3f1] leading-tight tracking-normal">
@@ -35,7 +35,7 @@ export const Hero = () => {
             solutions simplify your journey to financial stability, allowing you to focus on what
             matters most.
           </p>
-          <div className={`${Ralewayf.className} w-full h-9 bottom-to-top1 delay1-5 flex justify-start buttons gap-7 mt-7 text-[#f3f3f1]`}>
+          <div className={`${Ralewayf.className} w-full h-9 bottom-to-top1 delay1-6 flex justify-start buttons gap-7 mt-7 text-[#f3f3f1]`}>
             <div className="btn-1 active:scale-95">
               <p>Know More</p>
             </div>
