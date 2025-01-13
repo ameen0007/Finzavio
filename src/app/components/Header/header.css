@@ -51,16 +51,16 @@
       transform: translateY(0);
     }
   }
-  .glow2 {
-    opacity: 0; /* Initially hidden */
+  /* .glow2 {
+    opacity: 0; 
     animation: topToBottom 1s ease-in-out forwards;
-  }
+  } */
   /* .top-to-bottom.delay-0 {
     animation-delay: 0.7s;
   } */
-  .top-to-bottom .delay-10 {
+  /* .top-to-bottom .delay-10 {
     animation-delay: 2s;
-  }
+  } */
 
   @keyframes fadeIn {
     0% {
