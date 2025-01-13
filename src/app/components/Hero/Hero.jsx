@@ -53,14 +53,14 @@ export const Hero = () => {
 
 
         {/* Right Section - Image */}
-        <div className="w-full relative image min-h-[400px] flex justify-center items-center">
+        <div className="w-full relative  image min-h-[400px] flex justify-center items-center">
         <img
           src="herologo.png"
-          alt="logo"
-          className="pl-10 glow1 images object-contain rounded-lg max-w-[520px]"
+          alt="logo" 
+          className="pl-10 bottom-to-top1 delay1-3  images object-contain rounded-lg max-w-[520px]"
         />
         {/* Glowing Images with Animation */}
-        <div className="glow m1  absolute top-[-10%] right-[38%]">
+        <div className="glow m1  bottom-to-top1 delay1-5 absolute top-[-10%] right-[38%]">
           <img src="gold.png" alt="gold" />
         </div>
         <div className="glow m2 absolute bottom-[23%] left-[12%]">

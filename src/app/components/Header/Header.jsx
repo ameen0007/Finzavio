@@ -63,7 +63,7 @@ useEffect(() => {
       <div
      
       
-      className="header w-full items-center flex justify-between pt-4"
+      className="header bottom-to-top delay-1  w-full items-center flex justify-between pt-4"
     >
       {/* Logo */}
       
@@ -114,7 +114,7 @@ useEffect(() => {
       {/* Mobile Menu */}
       <div
 
-        className={`${Ralewayf.className} glow2 mobile w-full items-center flex justify-between`}
+        className={`${Ralewayf.className} delay-1 bottom-to-top mobile w-full items-center flex justify-between`}
       >
         <div className="pt-6 flex flex-col justify-center items-center">
           <img className="w-6" src="favicon.ico" alt="Logo" />

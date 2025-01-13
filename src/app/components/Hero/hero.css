@@ -148,54 +148,67 @@
   border: 1px solid #ffda44;
   transition: all 0.3s ease-in-out; /* Applies transition to all properties */
 }
-
-@keyframes topToBottom {
-  0% {
+@keyframes bottomToTop1 {
+  from {
+    transform: translateY(100px);
     opacity: 0;
-    transform: translateY(-50px);
   }
-  100% {
-    opacity: 1;
+  to {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
-/* Common glow styles */
-
-
-
-.glow1 {
-  opacity: 0; 
-  animation: topToBottom 1s ease-in-out forwards;
+.bottom-to-top1 {
+  animation: bottomToTop1 1s ease-in-out forwards;
+  /* overflow: visible;
+  animation: bottomToTop 1s ease-in-out forwards; */
+  opacity: 0;
 }
 
-
-
-.top-to-bottom .delay-0 {
+/* Set different delays for each div */
+.delay1-1 {
   animation-delay: 0.1s;
 }
-.top-to-bottom .delay-1 {
-  animation-delay: 0.4s;
-}
-.top-to-bottom .delay-2 {
-  animation-delay: 0.5s;
-}
-.top-to-bottom .delay-3 {
-  animation-delay: 0.6s;
-}
-.top-to-bottom .delay-4 {
-  animation-delay: 0.7s;
-}
-.top-to-bottom .delay-5 {
-  animation-delay: 0.8s;
-}
-.top-to-bottom .delay-6 {
-  animation-delay: 0.9s;
-}
-.top-to-bottom .delay-7 {
-  animation-delay: 1s;
+
+.delay1-2 {
+  animation-delay: 0.2s;
 }
 
+.delay1-3 {
+  animation-delay: 0.4s;
+}
+
+.delay1-4 {
+  animation-delay: 0.6s;
+}
+
+.delay1-5 {
+  animation-delay: 0.8s;
+}
+.delay1-6 {
+  animation-delay: 0.8s;
+}
+.delay1-7 {
+  animation-delay: 1s;
+}
+.delay1-8 {
+  animation-delay: 0.8s;
+}
+.delay1-9 {
+  animation-delay: 0.8s;
+}.delay1-10 {
+  animation-delay: 0.8s;
+}
+.delay1-11 {
+  animation-delay: 0.8s;
+}
+.delay1-12 {
+  animation-delay: 0.8s;
+}
+.delay1-13 {
+  animation-delay: 0.8s;
+}
 
 
 
@@ -209,44 +222,6 @@
 /* 
 
 /* Add to hero.css */
-@keyframes upDown {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px); /* Move up */
-    }
-    100% {
-      transform: translateY(0); /* Move down */
-    }
-  }
-  
-  .animate-up-down {
-    animation: upDown 2s ease-in-out infinite;
-  }
-  .delay-0 {
-    animation-delay: 0s;
-  }
-  
-  .delay-1 {
-    animation-delay: 500ms;
-  }
-  
-  .delay-2 {
-    animation-delay: 1s;
-  }
-  
-  .delay-3 {
-    animation-delay: 1.5ms;
-  }
-  
-  .delay-4 {
-    animation-delay: 2s;
-  }
-  
-  .animate-start {
-    animation: upDown 2s ease-in-out infinite;
-  }
 
   
 

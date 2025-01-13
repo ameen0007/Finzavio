@@ -76,3 +76,45 @@
     opacity: 0; /* Start invisible */
     animation: fadeIn 1s ease-in 2s forwards; /* Start animation after 2 seconds */
   }
+
+
+
+
+  @keyframes bottomToTop {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the animation to all divs */
+  .bottom-to-top {
+    animation: bottomToTop 1s ease-in-out forwards;
+    overflow: visible;
+  }
+  
+  /* Set different delays for each div */
+  .delay-1 {
+    animation-delay: 0.1s;
+  }
+  
+  .delay-2 {
+    animation-delay: 0.2s;
+  }
+  
+  .delay-3 {
+    animation-delay: 0.4s;
+  }
+  
+  .delay-4 {
+    animation-delay: 0.6s;
+  }
+  
+  .delay-5 {
+    animation-delay: 0.8s;
+  }
+  
