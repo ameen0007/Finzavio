@@ -94,7 +94,7 @@
   /* Apply the animation to all divs */
   .bottom-to-top {
     animation: bottomToTop 1s ease-in-out forwards;
-    overflow: visible;
+    opacity: 0;
   }
   
   /* Set different delays for each div */
