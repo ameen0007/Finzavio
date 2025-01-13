@@ -57,7 +57,7 @@ export const Hero = () => {
         <img
           src="herologo.png"
           alt="logo"
-          className="pl-10 images   object-contain  rounded-lg max-w-[520px]"
+          className="pl-10 glow1 images object-contain rounded-lg max-w-[520px]"
         />
         {/* Glowing Images with Animation */}
         <div className="glow m1  absolute top-[-10%] right-[38%]">

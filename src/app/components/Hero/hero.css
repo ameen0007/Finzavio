@@ -163,18 +163,15 @@
 /* Common glow styles */
 
 
-/* .glow {
-  opacity: 0;
-  animation: topToBottom 1s ease-in-out forwards;
-}
+
 .glow1 {
   opacity: 0; 
   animation: topToBottom 1s ease-in-out forwards;
 }
- */
 
 
-/* .top-to-bottom .delay-0 {
+
+.top-to-bottom .delay-0 {
   animation-delay: 0.1s;
 }
 .top-to-bottom .delay-1 {
@@ -198,7 +195,7 @@
 .top-to-bottom .delay-7 {
   animation-delay: 1s;
 }
- */
+
 
 
 
