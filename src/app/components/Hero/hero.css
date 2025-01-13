@@ -149,6 +149,51 @@
   transition: all 0.3s ease-in-out; /* Applies transition to all properties */
 }
 
+@keyframes topToBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Common glow styles */
+.glow {
+  opacity: 0; /* Initially hidden */
+  animation: topToBottom 1s ease-in-out forwards;
+}
+
+/* Delays for animations */
+.top-to-bottom.delay-0 {
+  animation-delay: 0.1s;
+}
+.top-to-bottom.delay-1 {
+  animation-delay: 0.2s;
+}
+.top-to-bottom.delay-2 {
+  animation-delay: 0.3s;
+}
+.top-to-bottom.delay-3 {
+  animation-delay: 0.3s;
+}
+.top-to-bottom.delay-4 {
+  animation-delay: 0.4s;
+}
+.top-to-bottom.delay-5 {
+  animation-delay: 0.5s;
+}
+.top-to-bottom.delay-6 {
+  animation-delay: 0.6s;
+}
+
+/* Main image scaling */
+.images {
+  max-width: 100%;
+  height: auto;
+}
 
 /* 
 

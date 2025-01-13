@@ -35,7 +35,7 @@ const [underlineWidth, setUnderlineWidth] = useState(0);
       easing: 'ease-in-out',
     });
 
-    AOS.refresh();
+  
 },[]);
 
   const handleActiveItem = (item, index) => {
@@ -70,6 +70,7 @@ useEffect(() => {
       {/* Desktop Menu */}
       <div
       data-aos="fade-down"
+      
       className="header w-full items-center flex justify-between pt-4"
     >
       {/* Logo */}
