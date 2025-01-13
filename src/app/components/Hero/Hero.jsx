@@ -76,72 +76,72 @@ export const Hero = () => {
         </div>
 
         {/* Right Section - Image */}
-        <div className="  w-full relative image min-h-[400px] flex justify-center items-center ">
+        <div data-aos="fade-up"   data-aos-delay="500" className="  w-full relative image min-h-[400px] flex justify-center items-center ">
          
 
          
           <img
              
-            data-aos="fade-up"
-            data-aos-delay="0"
-            data-aos-duration="700"
+            // data-aos="fade-up"
+            // data-aos-delay="0"
+            // data-aos-duration="700"
             src="herologo.png"
             alt="logo"
             className="pl-10 images  object-contain rounded-lg max-w-[520px]  "
           />
           {/* Glowing images */}
           <div
-            data-aos="fade-up"
-            data-aos-delay="800"
-            data-aos-duration="700"
+            // data-aos="fade-up"
+            // data-aos-delay="800"
+            // data-aos-duration="700"
             className={`glow m1 absolute top-[-10%] right-[38%] ${triggerAnimation ? 'animate-up-down delay-0' : ''}`}
           >
             <img src="gold.png" alt="" />
           </div>
           <div
-            data-aos="fade-up"
-            data-aos-delay="600"
-            data-aos-duration="700"
+            // data-aos="fade-up"
+            // data-aos-delay="600"
+            // data-aos-duration="700"
             className={`glow m2 absolute bottom-[23%] left-[12%] ${triggerAnimation ? 'animate-up-down delay-3' : ''}`}
           >
             <img src="gold.png" alt="" />
           </div>
           <div
-            data-aos="fade-up"
-            data-aos-delay="700"
-            data-aos-duration="700"
+            // data-aos="fade-up"
+            // data-aos-delay="700"
+            // data-aos-duration="700"
             className={`glow m3 absolute bottom-[20%] right-[16%] ${triggerAnimation ? 'animate-up-down delay-2' : ''}`}
           >
             <img src="gold.png" alt="" />
           </div>
           <div
-            data-aos="fade-up"
-            data-aos-delay="600"
-            data-aos-duration="700"
+            // data-aos="fade-up"
+            // data-aos-delay="600"
+            // data-aos-duration="700"
             className={`glow m4 absolute bottom-[1%] right-[50%] ${triggerAnimation ? 'animate-up-down delay-3' : ''}`}
           >
             <img src="star.png" alt="" />
           </div>
           <div
-            data-aos="fade-up"
-            data-aos-delay="700"
-            data-aos-duration="700"
+            // data-aos="fade-up"
+            // data-aos-delay="700"
+            // data-aos-duration="700"
             className={`glow m5 absolute top-[22%] left-[20%] ${triggerAnimation ? 'animate-up-down delay-1' : ''}`}
           >
             <img src="star.png" alt="" />
           </div>
           <div
-            data-aos="fade-up"
-            data-aos-delay="800"
-            data-aos-duration="700"
+            // data-aos="fade-up"
+            // data-aos-delay="800"
+            // data-aos-duration="700"
             className={`glow m6 absolute top-[46%] right-[-5%] ${triggerAnimation ? 'animate-up-down delay-1' : ''}`}
           >
             <img src="star.png" alt="" />
           </div>
           <div
-            data-aos="fade-up"
-            data-aos-delay="600"
-            data-aos-duration="700"
+            // data-aos="fade-up"
+            // data-aos-delay="600"
+            // data-aos-duration="700"
             className={`glow m7 absolute top-[14%] right-[15%] ${triggerAnimation ? 'animate-up-down delay-3' : ''}`}
           >
             <img src="bluel.png" alt="" />
