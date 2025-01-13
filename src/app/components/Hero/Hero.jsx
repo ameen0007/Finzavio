@@ -23,7 +23,7 @@ export const Hero = () => {
     <>
       <div className={`${bricolageGrotesque.className} flex gap-20 justify-between hero `}>
         {/* Left Section - Content */}
-        <div className="w-full text flex flex-col justify-between">
+        <div className="w-full text flex flex-col justify-between glow1 ">
           <p className="text-5xl p text-[#f3f3f1]  leading-tight tracking-normal">
             Where <span className= "  text-[#ffda46]">Peace and Happiness</span>
           </p>
