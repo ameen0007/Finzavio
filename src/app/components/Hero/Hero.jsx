@@ -24,18 +24,18 @@ export const Hero = () => {
       <div className={`${bricolageGrotesque.className} flex gap-20 justify-between hero `}>
         {/* Left Section - Content */}
         <div className="w-full text flex flex-col justify-between">
-          <p className="text-5xl p text-[#f3f3f1] leading-tight tracking-normal">
-            Where <span className="text-[#ffda46]">Peace and Happiness</span>
+          <p className="text-5xl p text-[#f3f3f1] glow1 top-to-bottom delay-1 leading-tight tracking-normal">
+            Where <span className= " glow1 top-to-bottom delay-1 text-[#ffda46]">Peace and Happiness</span>
           </p>
-          <p className="p text-5xl text-[#f3f3f1] leading-tight tracking-normal">
+          <p className="p text-5xl glow1 top-to-bottom delay-1 text-[#f3f3f1] leading-tight tracking-normal">
             Meet Finance
           </p>
-          <p className={`${Ralewayf.className} mt-7 s text-white text-sm leading-7 tracking-wider`}>
+          <p className={`${Ralewayf.className} mt-7 s glow1 top-to-bottom delay-4 text-white text-sm leading-7 tracking-wider`}>
             Discover a world where managing your finances brings clarity and joy. Our tailored
             solutions simplify your journey to financial stability, allowing you to focus on what
             matters most.
           </p>
-          <div className={`${Ralewayf.className} w-full h-9 flex justify-start buttons gap-7 mt-7 text-[#f3f3f1]`}>
+          <div className={`${Ralewayf.className} w-full h-9 glow1 top-to-bottom delay-6 flex justify-start buttons gap-7 mt-7 text-[#f3f3f1]`}>
             <div className="btn-1 active:scale-95">
               <p>Know More</p>
             </div>
