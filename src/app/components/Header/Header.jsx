@@ -69,8 +69,8 @@ useEffect(() => {
       
       {/* Navigation and Connect Us */}
       <div className="relative flex items-center justify-between w-full">
-      <div className="pl-2 pt-5">
-        <img className="w-16" src="mainlogo.png" alt="Logo" />
+      <div loading="eager" className="pl-2 pt-5 ">
+        <img loading="eager" className="w-16" src="mainlogo.png" alt="Logo" />
       </div>
         {/* Navigation Items */}
         <ul className="text-[#f3f3f1] flex gap-10 text-[14px]">
