@@ -114,9 +114,9 @@ useEffect(() => {
       {/* Mobile Menu */}
       <div
 
-        className={`${Ralewayf.className} min-h-[70px]  mobile w-full items-center flex justify-between `}
+        className={`${Ralewayf.className} min-h-[70px]  delay-1 bottom-to-top  mobile w-full items-center flex justify-between `}
       >
-        <div  className="pt-6 delay-1 bottom-to-top  flex flex-col justify-center items-center">
+        <div  className="pt-6  flex flex-col justify-center items-center">
           <img loading="lazy" className="w-6" src="favicon.ico" alt="Logo" />
           <p className="-tracking-tighter mt-1 text-[10px] text-[#EDE6A0]">
             FINZAVIO

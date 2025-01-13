@@ -159,6 +159,23 @@
   }
 }
 
+@keyframes ToTobottomp1 {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.ToTobottomp1 {
+  animation: ToTobottomp1 500ms ease-in-out forwards;
+  /* overflow: visible;
+  animation: bottomToTop 1s ease-in-out forwards; */
+  opacity: 0;
+}
 .bottom-to-top1 {
   animation: bottomToTop1 1s ease-in-out forwards;
   /* overflow: visible;
@@ -180,36 +197,24 @@
 }
 
 .delay1-4 {
-  animation-delay: 0.6s;
+  animation-delay: 0.5s;
 }
 
 .delay1-5 {
-  animation-delay: 0.8s;
+  animation-delay: 0.6s;
 }
 .delay1-6 {
-  animation-delay: 0.8s;
+  animation-delay: 0.7s;
 }
 .delay1-7 {
-  animation-delay: 1s;
+  animation-delay: 0.8s;
 }
 .delay1-8 {
-  animation-delay: 0.8s;
+  animation-delay: 0.9s;
 }
 .delay1-9 {
-  animation-delay: 0.8s;
-}.delay1-10 {
-  animation-delay: 0.8s;
+  animation-delay: 1s;
 }
-.delay1-11 {
-  animation-delay: 0.8s;
-}
-.delay1-12 {
-  animation-delay: 0.8s;
-}
-.delay1-13 {
-  animation-delay: 0.8s;
-}
-
 
 
 

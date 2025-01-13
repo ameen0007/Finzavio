@@ -24,18 +24,18 @@ export const Hero = () => {
       <div className={`${bricolageGrotesque.className} flex gap-20 justify-between hero `}>
         {/* Left Section - Content */}
         <div className="w-full text flex flex-col justify-between ">
-          <p className="text-5xl p text-[#f3f3f1]  leading-tight tracking-normal">
+          <p className="text-5xl p text-[#f3f3f1]  bottom-to-top1 delay1-2  leading-tight tracking-normal">
             Where <span className= "  text-[#ffda46]">Peace and Happiness</span>
           </p>
-          <p className="p text-5xl  text-[#f3f3f1] leading-tight tracking-normal">
+          <p className="p text-5xl bottom-to-top1 delay1-3  text-[#f3f3f1] leading-tight tracking-normal">
             Meet Finance
           </p>
-          <p className={`${Ralewayf.className} mt-7 s  text-white text-sm leading-7 tracking-wider`}>
+          <p className={`${Ralewayf.className} mt-7 bottom-to-top1 delay1-4  text-white text-sm leading-7 tracking-wider`}>
             Discover a world where managing your finances brings clarity and joy. Our tailored
             solutions simplify your journey to financial stability, allowing you to focus on what
             matters most.
           </p>
-          <div className={`${Ralewayf.className} w-full h-9  flex justify-start buttons gap-7 mt-7 text-[#f3f3f1]`}>
+          <div className={`${Ralewayf.className} w-full h-9 bottom-to-top1 delay1-5 flex justify-start buttons gap-7 mt-7 text-[#f3f3f1]`}>
             <div className="btn-1 active:scale-95">
               <p>Know More</p>
             </div>
@@ -57,28 +57,28 @@ export const Hero = () => {
         <img
           src="herologo.png"
           alt="logo" 
-          className="pl-10 bottom-to-top1 delay1-3  images object-contain rounded-lg max-w-[520px]"
+          className="pl-10 bottom-to-top1 delay1-1  images object-contain rounded-lg max-w-[520px]"
         />
         {/* Glowing Images with Animation */}
-        <div className="glow m1  bottom-to-top1 delay1-5 absolute top-[-10%] right-[38%]">
+        <div className="glow m1  ToTobottomp1 delay1-6  absolute top-[-10%] right-[38%]">
           <img src="gold.png" alt="gold" />
         </div>
-        <div className="glow m2 absolute bottom-[23%] left-[12%]">
+        <div className="glow m2 ToTobottomp1 delay1-3   absolute bottom-[23%] left-[12%]">
           <img src="gold.png" alt="gold" />
         </div>
-        <div className="glow m3   absolute bottom-[20%] right-[16%]">
+        <div className="glow m3  ToTobottomp1 delay1-3   absolute bottom-[20%] right-[16%]">
           <img src="gold.png" alt="gold" />
         </div>
-        <div className="glow m4  absolute bottom-[1%] right-[50%]">
+        <div className="glow m4 ToTobottomp1 delay1-2  absolute bottom-[1%] right-[50%]">
           <img src="star.png" alt="star" />
         </div>
-        <div className="glow m5 absolute top-[22%] left-[20%]">
+        <div className="glow ToTobottomp1 delay1-5 m5  absolute top-[22%] left-[20%]">
           <img src="star.png" alt="star" />
         </div>
-        <div className="glow  m6  absolute top-[46%] right-[-5%]">
+        <div className="glow ToTobottomp1 delay1-4  m6 absolute top-[46%] right-[-5%]">
           <img src="star.png" alt="star" />
         </div>
-        <div className="glow  m7   absolute top-[14%] right-[15%]">
+        <div className="glow ToTobottomp1 delay1-5  m7  absolute top-[14%] right-[15%]">
           <img src="bluel.png" alt="blue light" />
         </div>
   
