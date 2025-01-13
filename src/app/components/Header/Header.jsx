@@ -116,8 +116,8 @@ useEffect(() => {
 
         className={`${Ralewayf.className} delay-1 bottom-to-top mobile w-full items-center flex justify-between`}
       >
-        <div className="pt-6 flex flex-col justify-center items-center">
-          <img className="w-6" src="favicon.ico" alt="Logo" />
+        <div loading="eager" className="pt-6  flex flex-col justify-center items-center">
+          <img className="w-6" loading="eager" src="favicon.ico" alt="Logo" />
           <p className="-tracking-tighter mt-1 text-[10px] text-[#EDE6A0]">
             FINZAVIO
           </p>
