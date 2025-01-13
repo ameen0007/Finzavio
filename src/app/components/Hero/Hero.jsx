@@ -169,188 +169,95 @@
 // };
 "use client";
 
-import { useState, useEffect } from "react";
-import { Bricolage_Grotesque, Raleway } from "next/font/google";
+import { Bricolage_Grotesque, Raleway } from 'next/font/google';
+import React from 'react';
+import './hero.css';
 import { FaAngleDoubleRight } from "react-icons/fa";
-import { motion } from "framer-motion"; // Import framer-motion
-import "./hero.css";
 
-// Import the Bricolage Grotesque font
 const bricolageGrotesque = Bricolage_Grotesque({
-  subsets: ["latin"],
-  weight: "400",
+  subsets: ['latin'],
+  weight: '400',
 });
 
 const Ralewayf = Raleway({
-  subsets: ["latin"],
+  subsets: ['latin'],
 });
 
 export const Hero = () => {
-  const [triggerAnimation, setTriggerAnimation] = useState(true);
-
-  // Set the trigger for animation after some delay
-  // useEffect(() => {
-  //   const timeout = setTimeout(() => {
-  //     setTriggerAnimation(true);
-  //   }, 1500); // 1.5 seconds delay
-
-  //   return () => clearTimeout(timeout);
-  // }, [triggerAnimation]);
-
   return (
     <>
-      <div className={`${bricolageGrotesque.className} flex gap-20 justify-between hero `}>
+      <div className={`${bricolageGrotesque.className} flex gap-20 justify-between hero`}>
         {/* Left Section - Content */}
         <div className="w-full text flex flex-col justify-between">
-          <motion.p
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="text-5xl p text-[#f3f3f1] leading-tight tracking-normal"
-          >
+          <p className="text-5xl p text-[#f3f3f1] leading-tight tracking-normal fade-up">
             Where <span className="text-[#ffda46]">Peace and Happiness </span>
-          </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className=" p text-5xl text-[#f3f3f1] leading-tight tracking-normal"
-          >
+          </p>
+          <p className="p text-5xl text-[#f3f3f1] leading-tight tracking-normal fade-up animation-delay-200">
             Meet Finance
-          </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-            className={`${Ralewayf.className} mt-7 s text-white text-sm leading-7 tracking-wider`}
-          >
-            Discover a world where managing your finances brings clarity and joy.
-            Our tailored solutions simplify your journey to financial stability,
-            allowing you to focus on what matters most
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.5 }}
-            className={`${Ralewayf.className} w-full h-9 flex justify-start buttons gap-7 mt-7 text-[#f3f3f1]`}
-          >
-            <div className="btn-1 active:scale-95">
+          </p>
+          <p className={`${Ralewayf.className} mt-7 s text-white text-sm leading-7 tracking-wider fade-up animation-delay-400`}>
+            Discover a world where managing your finances brings clarity and joy. Our tailored solutions simplify your journey to financial stability, allowing you to focus on what matters most
+          </p>
+          <div className={`${Ralewayf.className} w-full h-9 flex justify-start buttons gap-7 mt-7 text-[#f3f3f1] fade-up animation-delay-600`}>
+            <div className="btn-1 hover-scale">
               <p>Know More</p>
             </div>
-            <div className="btn-2 active:scale-95">
+            <div className="btn-2 hover-scale">
               <p className="p-[5px] px-[13px] bg-[#ffda46]">
                 <FaAngleDoubleRight />
               </p>
               <h4 className="text-[#f3f3f1]">Contact Us</h4>
             </div>
-          </motion.div>
+          </div>
         </div>
 
         {/* Right Section - Image */}
         <div className="w-full relative image min-h-[400px] flex justify-center items-center">
-          <motion.img
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7 }}
+          <img
             src="herologo.png"
             alt="logo"
-            className="pl-10 images object-contain rounded-lg max-w-[520px]"
+            className="pl-10 images object-contain rounded-lg max-w-[520px] fade-up"
           />
+          
           {/* Glowing images */}
-          <motion.div
-            initial={{ opacity: 0, y: -50 }}
-            animate={triggerAnimation ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.8 }}
-            className={`glow m1 absolute top-[-10%] right-[38%]`}
-          >
+          <div className="glow m1 absolute top-[-10%] right-[38%] fade-up animation-delay-800 float">
             <img src="gold.png" alt="" />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -50 }}
-            animate={triggerAnimation ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.6 }}
-            className={`glow m2 absolute bottom-[23%] left-[12%]`}
-          >
+          </div>
+          <div className="glow m2 absolute bottom-[23%] left-[12%] fade-up animation-delay-600 float animation-delay-100">
             <img src="gold.png" alt="" />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -50 }}
-            animate={triggerAnimation ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.7 }}
-            className={`glow m3 absolute bottom-[20%] right-[16%]`}
-          >
+          </div>
+          <div className="glow m3 absolute bottom-[20%] right-[16%] fade-up animation-delay-700 float animation-delay-200">
             <img src="gold.png" alt="" />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -50 }}
-            animate={triggerAnimation ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.6 }}
-            className={`glow m4 absolute bottom-[1%] right-[50%]`}
-          >
+          </div>
+          <div className="glow m4 absolute bottom-[1%] right-[50%] fade-up animation-delay-600 float animation-delay-300">
             <img src="star.png" alt="" />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -50 }}
-            animate={triggerAnimation ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.7 }}
-            className={`glow m5 absolute top-[22%] left-[20%]`}
-          >
+          </div>
+          <div className="glow m5 absolute top-[22%] left-[20%] fade-up animation-delay-700 float animation-delay-400">
             <img src="star.png" alt="" />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -50 }}
-            animate={triggerAnimation ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.8 }}
-            className={`glow m6 absolute top-[46%] right-[-5%]`}
-          >
+          </div>
+          <div className="glow m6 absolute top-[46%] right-[-5%] fade-up animation-delay-800 float animation-delay-500">
             <img src="star.png" alt="" />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -50 }}
-            animate={triggerAnimation ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.6 }}
-            className={`glow m7 absolute top-[14%] right-[15%]`}
-          >
+          </div>
+          <div className="glow m7 absolute top-[14%] right-[15%] fade-up animation-delay-600 float animation-delay-600">
             <img src="bluel.png" alt="" />
-          </motion.div>
+          </div>
         </div>
       </div>
 
       <div className="pb-10 btn-3 text-[#f3f3f1]">
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          className="items"
-        >
+        <div className="items slide-up animation-delay-200">
           <button>FINANCE ADVISOR</button>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="items"
-        >
+        </div>
+        <div className="items slide-up animation-delay-300">
           <button>SWP Calculator</button>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="items"
-        >
+        </div>
+        <div className="items slide-up animation-delay-400">
           <button>SIP Calculator</button>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="items"
-        >
+        </div>
+        <div className="items slide-up animation-delay-500">
           <button>FINANCE ANALYST</button>
-        </motion.div>
+        </div>
       </div>
     </>
   );
 };
-
