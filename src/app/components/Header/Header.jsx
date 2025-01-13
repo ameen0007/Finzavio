@@ -63,7 +63,7 @@ useEffect(() => {
       <div
      
       
-      className="header glow2 top-to-bottom delay-10 w-full items-center flex justify-between pt-4"
+      className="header w-full items-center flex justify-between pt-4"
     >
       {/* Logo */}
       
