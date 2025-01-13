@@ -58,6 +58,9 @@
   /* .top-to-bottom.delay-0 {
     animation-delay: 0.7s;
   } */
+  .top-to-bottom .delay-10 {
+    animation-delay: 2s;
+  }
 
   @keyframes fadeIn {
     0% {
@@ -71,5 +74,5 @@
   /* Initial state of the div */
   .fade-in-delay {
     opacity: 0; /* Start invisible */
-    animation: fadeIn 1s ease-in 1.7s forwards; /* Start animation after 2 seconds */
+    animation: fadeIn 1s ease-in 2s forwards; /* Start animation after 2 seconds */
   }

@@ -161,40 +161,46 @@
 }
 
 /* Common glow styles */
-.glow {
-  opacity: 0; /* Initially hidden */
+
+
+/* .glow {
+  opacity: 0;
   animation: topToBottom 1s ease-in-out forwards;
 }
 .glow1 {
-  opacity: 0; /* Initially hidden */
+  opacity: 0; 
   animation: topToBottom 1s ease-in-out forwards;
 }
+ */
 
-/* Delays for animations */
-.top-to-bottom.delay-0 {
+
+/* .top-to-bottom .delay-0 {
   animation-delay: 0.1s;
 }
-.top-to-bottom.delay-1 {
+.top-to-bottom .delay-1 {
   animation-delay: 0.4s;
 }
-.top-to-bottom.delay-2 {
+.top-to-bottom .delay-2 {
   animation-delay: 0.5s;
 }
-.top-to-bottom.delay-3 {
+.top-to-bottom .delay-3 {
   animation-delay: 0.6s;
 }
-.top-to-bottom.delay-4 {
+.top-to-bottom .delay-4 {
   animation-delay: 0.7s;
 }
-.top-to-bottom.delay-5 {
+.top-to-bottom .delay-5 {
   animation-delay: 0.8s;
 }
-.top-to-bottom.delay-6 {
+.top-to-bottom .delay-6 {
   animation-delay: 0.9s;
 }
-.top-to-bottom.delay-7 {
+.top-to-bottom .delay-7 {
   animation-delay: 1s;
 }
+ */
+
+
 
 
 /* Main image scaling */
