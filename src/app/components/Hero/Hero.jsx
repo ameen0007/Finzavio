@@ -57,7 +57,7 @@ export const Hero = () => {
         <img
           src="herologo.png"
           alt="logo" 
-          className="pl-10 bottom-to-top1 delay1-1  images object-contain rounded-lg max-w-[520px]"
+          className="pl-10 bottom-to-top1 delay1-2  images object-contain rounded-lg max-w-[520px]"
         />
         {/* Glowing Images with Animation */}
         <div className="glow m1  ToTobottomp1 delay1-6  absolute top-[-10%] right-[38%]">
