@@ -39,3 +39,37 @@
     }
     
   }
+
+
+  @keyframes topToBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .glow2 {
+    opacity: 0; /* Initially hidden */
+    animation: topToBottom 1s ease-in-out forwards;
+  }
+  /* .top-to-bottom.delay-0 {
+    animation-delay: 0.7s;
+  } */
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; /* Fully invisible */
+    }
+    100% {
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
+  /* Initial state of the div */
+  .fade-in-delay {
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 1s ease-in 1.7s forwards; /* Start animation after 2 seconds */
+  }

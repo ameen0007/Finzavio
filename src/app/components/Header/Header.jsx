@@ -28,15 +28,7 @@ const [underlineWidth, setUnderlineWidth] = useState(0);
   //     once: true, // Whether animation should happen only once
   //   });
   // }, []);
-  useEffect(() => {
-    AOS.init({
-      once: true,
-      mirror: false,
-      easing: 'ease-in-out',
-    });
 
-  
-},[]);
 
   const handleActiveItem = (item, index) => {
     setActiveItem(item);
@@ -69,9 +61,9 @@ useEffect(() => {
     <>
       {/* Desktop Menu */}
       <div
-      data-aos="fade-down"
+     
       
-      className="header w-full items-center flex justify-between pt-4"
+      className="header glow2 w-full items-center flex justify-between pt-4"
     >
       {/* Logo */}
       
@@ -109,7 +101,7 @@ useEffect(() => {
 
         {/* Dynamic Underline */}
         <div
-          className="absolute bottom-[-2px] h-[2px] bg-[#ffda46] transition-all duration-500"
+          className="absolute bottom-[-2px] fade-in-delay h-[2px] bg-[#ffda46] transition-all duration-500"
           style={{
             width: `${underlineWidth}px`,
             left: `${underlineLeft}px`,
@@ -121,8 +113,8 @@ useEffect(() => {
 
       {/* Mobile Menu */}
       <div
-        data-aos="fade-down"
-        className={`${Ralewayf.className} mobile w-full items-center flex justify-between`}
+
+        className={`${Ralewayf.className} glow2 mobile w-full items-center flex justify-between`}
       >
         <div className="pt-6 flex flex-col justify-center items-center">
           <img className="w-6" src="favicon.ico" alt="Logo" />

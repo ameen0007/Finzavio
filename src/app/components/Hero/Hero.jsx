@@ -57,28 +57,28 @@ export const Hero = () => {
         <img
           src="herologo.png"
           alt="logo"
-          className="pl-10 images object-contain rounded-lg max-w-[520px]"
+          className="pl-10 glow1 images top-to-bottom object-contain delay-0 rounded-lg max-w-[520px]"
         />
         {/* Glowing Images with Animation */}
-        <div className="glow m1 top-to-bottom delay-0 absolute top-[-10%] right-[38%]">
+        <div className="glow m1 top-to-bottom delay-2 absolute top-[-10%] right-[38%]">
           <img src="gold.png" alt="gold" />
         </div>
-        <div className="glow m2 top-to-bottom delay-1 absolute bottom-[23%] left-[12%]">
+        <div className="glow m2 top-to-bottom delay-3 absolute bottom-[23%] left-[12%]">
           <img src="gold.png" alt="gold" />
         </div>
         <div className="glow m3 top-to-bottom delay-2 absolute bottom-[20%] right-[16%]">
           <img src="gold.png" alt="gold" />
         </div>
-        <div className="glow m4 top-to-bottom delay-3 absolute bottom-[1%] right-[50%]">
+        <div className="glow m4 top-to-bottom delay-4 absolute bottom-[1%] right-[50%]">
           <img src="star.png" alt="star" />
         </div>
-        <div className="glow m5 top-to-bottom delay-4 absolute top-[22%] left-[20%]">
+        <div className="glow m5 top-to-bottom delay-5 absolute top-[22%] left-[20%]">
           <img src="star.png" alt="star" />
         </div>
-        <div className="glow m6 top-to-bottom delay-5 absolute top-[46%] right-[-5%]">
+        <div className="glow m6 top-to-bottom delay-6 absolute top-[46%] right-[-5%]">
           <img src="star.png" alt="star" />
         </div>
-        <div className="glow m7 top-to-bottom delay-6 absolute top-[14%] right-[15%]">
+        <div className="glow m7 top-to-bottom delay-7 absolute top-[14%] right-[15%]">
           <img src="bluel.png" alt="blue light" />
         </div>
       </div>
