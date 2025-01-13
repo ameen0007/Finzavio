@@ -23,7 +23,7 @@ export const Hero = () => {
     <>
       <div className={`${bricolageGrotesque.className} flex gap-20 justify-between hero `}>
         {/* Left Section - Content */}
-        <div className="w-full text flex flex-col justify-between glow1 ">
+        <div className="w-full text flex flex-col justify-between glow1 delay-3 top-to-bottom ">
           <p className="text-5xl p text-[#f3f3f1]  leading-tight tracking-normal">
             Where <span className= "  text-[#ffda46]">Peace and Happiness</span>
           </p>
@@ -57,7 +57,7 @@ export const Hero = () => {
         <img
           src="herologo.png"
           alt="logo"
-          className="pl-10 glow1 images top-to-bottom object-contain delay-0 rounded-lg max-w-[520px]"
+          className="pl-10 glow1 images top-to-bottom object-contain delay-4 rounded-lg max-w-[520px]"
         />
         {/* Glowing Images with Animation */}
         <div className="glow m1 top-to-bottom delay-3 absolute top-[-10%] right-[38%]">
