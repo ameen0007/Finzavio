@@ -24,7 +24,7 @@ export const Hero = () => {
     Aos.init({
       duration: 1000, // Animation duration in milliseconds
       easing: "ease-in-out", // Animation easing
-      once: true, // Whether animation should happen only once
+     
     });
   }, []);
 
@@ -104,9 +104,9 @@ export const Hero = () => {
     </div>
       <div className={`${bricolageGrotesque.className}pb-10 btn-3 mt-10  text-[#f3f3f1]`}>
          
-        <div data-aos="fade-up" className= "items px-4  " > 
+        <div data-aos="fade-up" className= "items  " > 
           <button>FINANCE ADVISOR</button>
-          <p data-aos="fade-up" className={`${Ralewayf.className} text-[12px] mt-3 `}>It is a long Established Fact that a reader will be distracted by the readable</p>
+          <p  className={`${Ralewayf.className} text-[12px] mt-3 `}>It is a long Established Fact that a reader will be distracted by the readable</p>
         </div>
         <div data-aos="fade-up" className="items ">
           <button>SWP CALCULATOR</button>
