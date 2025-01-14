@@ -11,7 +11,7 @@ const Home = () => {
   <div className='w-full bg-[#0b0b0b]'>
 
 
-      <div className='main-div overflow-hidden max-w-[1280px] m-auto '>
+      <div className='main-div overflow-hidden max-w-[1280px] m-auto'>
        <Header/>
          <Hero/>
        

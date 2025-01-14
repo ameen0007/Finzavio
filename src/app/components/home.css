@@ -8,14 +8,14 @@
    background-position: center;
    background-repeat: no-repeat; /* Prevents the image from repeating */
   width: 100%;
- height: 100vh;
- 
+ min-height: 100vh;
+ height: auto;
   display: flex;
   
   flex-direction: column;
   justify-content: space-between;
   padding: 0px 40px;
-
+padding-bottom: 20px;
 }
 
 @media screen and (width: 1024px) and (height: 1366px) {

@@ -21,7 +21,7 @@ export const Hero = () => {
 
   return (
     <>
-      <div className={`${bricolageGrotesque.className} flex gap-20 justify-between hero `}>
+      <div className={`${bricolageGrotesque.className} flex gap-20 justify-between hero mt-10 `}>
         {/* Left Section - Content */}
         <div className="w-full text flex flex-col justify-between ">
           <p className="text-5xl p text-[#f3f3f1]  bottom-to-top1 delay1-3  leading-tight tracking-normal">
@@ -93,18 +93,23 @@ export const Hero = () => {
 
       
     </div>
-      <div className="pb-10 btn-3 text-[#f3f3f1]">
-        <div className="items animate-fade-up-right delay-500">
+      <div className={`${bricolageGrotesque.className}pb-10 btn-3 mt-10  text-[#f3f3f1]`}>
+         
+        <div className= "items px-4  animate-fade-up-right delay-500" > 
           <button>FINANCE ADVISOR</button>
+          <p className={`${Ralewayf.className} text-[12px] mt-3 `}>It is a long Established Fact that a reader will be distracted by the readable</p>
         </div>
         <div className="items animate-fade-up-right delay-400">
-          <button>SWP Calculator</button>
+          <button>SWP CALCULATOR</button>
+          <p className={`${Ralewayf.className} text-[12px]  mt-3 `}>It is a long Established Fact that a reader will be distracted by the readable</p>
         </div>
         <div className="items animate-fade-up-right delay-300">
-          <button>SIP Calculator</button>
+          <button>SIP CALCULATOR</button>
+          <p className={`${Ralewayf.className} text-[12px]  mt-3`}>It is a long Established Fact that a reader will be distracted by the readable</p>
         </div>
         <div className="items animate-fade-up-right delay-200">
           <button>FINANCE ANALYST</button>
+          <p className={`${Ralewayf.className} text-[12px]  mt-3`}>It is a long Established Fact that a reader will be distracted by the readable</p>
         </div>
       </div>
     </>
