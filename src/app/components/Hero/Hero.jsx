@@ -6,6 +6,7 @@ import React from "react";
 import "./hero.css";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import Aos from "aos";
+import 'aos/dist/aos.css';
 
 // Import the Bricolage Grotesque font
 const bricolageGrotesque = Bricolage_Grotesque({
@@ -22,8 +23,11 @@ export const Hero = () => {
 
   useEffect(() => {
     Aos.init({
-      duration: 1000, // Animation duration in milliseconds
-      easing: "ease-in-out", // Animation easing
+      duration: 1000,
+    once: false,  // This is the key change - set to false to animate every time
+    offset: 50,
+    easing: 'ease-in-out',
+    mirror: true
      
     });
   }, []);
@@ -102,6 +106,7 @@ export const Hero = () => {
 
       
     </div>
+
       <div className={`${bricolageGrotesque.className}pb-10 btn-3 mt-10  text-[#f3f3f1]`}>
          
         <div data-aos="fade-up" className= "items  " > 
