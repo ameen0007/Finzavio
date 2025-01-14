@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Bricolage_Grotesque, Raleway } from "next/font/google";
 import React from "react";
 import "./hero.css";
 import { FaAngleDoubleRight } from "react-icons/fa";
+import Aos from "aos";
 
 // Import the Bricolage Grotesque font
 const bricolageGrotesque = Bricolage_Grotesque({
@@ -18,6 +19,14 @@ const Ralewayf = Raleway({
 
 export const Hero = () => {
   const [triggerAnimation, setTriggerAnimation] = useState(false);
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: "ease-in-out", // Animation easing
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
 
   return (
     <>
@@ -95,19 +104,19 @@ export const Hero = () => {
     </div>
       <div className={`${bricolageGrotesque.className}pb-10 btn-3 mt-10  text-[#f3f3f1]`}>
          
-        <div className= "items px-4  animate-fade-up-right delay-500" > 
+        <div data-aos="fade-up" className= "items px-4  " > 
           <button>FINANCE ADVISOR</button>
-          <p className={`${Ralewayf.className} text-[12px] mt-3 `}>It is a long Established Fact that a reader will be distracted by the readable</p>
+          <p data-aos="fade-up" className={`${Ralewayf.className} text-[12px] mt-3 `}>It is a long Established Fact that a reader will be distracted by the readable</p>
         </div>
-        <div className="items animate-fade-up-right delay-400">
+        <div data-aos="fade-up" className="items ">
           <button>SWP CALCULATOR</button>
           <p className={`${Ralewayf.className} text-[12px]  mt-3 `}>It is a long Established Fact that a reader will be distracted by the readable</p>
         </div>
-        <div className="items animate-fade-up-right delay-300">
+        <div data-aos="fade-up" className="items ">
           <button>SIP CALCULATOR</button>
           <p className={`${Ralewayf.className} text-[12px]  mt-3`}>It is a long Established Fact that a reader will be distracted by the readable</p>
         </div>
-        <div className="items animate-fade-up-right delay-200">
+        <div data-aos="fade-up" className="items ">
           <button>FINANCE ANALYST</button>
           <p className={`${Ralewayf.className} text-[12px]  mt-3`}>It is a long Established Fact that a reader will be distracted by the readable</p>
         </div>

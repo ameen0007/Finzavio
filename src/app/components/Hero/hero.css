@@ -543,7 +543,7 @@
   
   .btn-3 .items button {
     width: 100%; /* Button takes full width of its parent */
-    padding: 10px;
+   padding: 0px 10px 10px 10px;
     border-radius: 10px;
 
    
