@@ -42,7 +42,7 @@ export const About = () => {
 
       <div className={` ${bricolageGrotesque.className} mt-10 `} >
       <h1 data-aos="fade-up" className='text-center text-[30px] font-[600] '>Who We Are</h1>
-      <p data-aos="fade-up" className={`${Ralewayf.className} mt-5 text-center lg:text-[18px]`}>At Finzavio, we deliver expert financial analysis, personalized advisory services, and cutting-edge stock market strategies to help you grow and secure your wealth. Our client-focused approach, proven results, and commitment to transparency set us apart. With us, you gain insights, confidence, and success in every financial decision. Your growth is our mission.</p>
+      <p data-aos="fade-up" className={`${Ralewayf.className} leading-relaxed mt-5 text-center lg:text-[18px]`}>At Finzavio, we deliver expert financial analysis, personalized advisory services, and cutting-edge stock market strategies to help you grow and secure your wealth. Our client-focused approach, proven results, and commitment to transparency set us apart. With us, you gain insights, confidence, and success in every financial decision. Your growth is our mission.</p>
     </div>
      
     </div>
@@ -54,7 +54,7 @@ export const About = () => {
     <div className="w-full text-center mt-10  flex flex-col gap-5 lg:flex-row justify-center items-center">
       {/* First Inner Div */}
   
-        <div data-aos="zoom-in"  className="w-[60%] m-auto md:w-full flex justify-center items-center lg:w-[50%] h-[350px]">
+        <div data-aos="zoom-in"  className="w-[60%]  m-auto md:w-full flex justify-center items-center lg:w-[50%] lg:h-[350px]">
           <img src="mission.png" alt="Placeholder" />
         </div>
 
@@ -62,14 +62,14 @@ export const About = () => {
       {/* Second Inner Div */}
       <div  className="inner-div-2 lg:w-[70%]">
         <h1 data-aos="fade-up" className={`text-[35px] font-[600] lg:mb-10 lg:text-[45px]  ${bricolageGrotesque.className} `} > Our Mission</h1>
-        <p data-aos="fade-up"  className={` lg:text-[18px] ${Ralewayf.className} `}>At Finzavio, we deliver expert financial analysis, personalized advisory services, and cutting-edge stock market strategies to help you grow and secure your wealth. Our client-focused approach, proven results, and commitment to transparency set us apart. With us, you gain insights, confidence, and success in every financial decision. Your growth is our mission.</p>
+        <p data-aos="fade-up"  className={` leading-relaxed  lg:text-[18px] ${Ralewayf.className} `}>At Finzavio, we deliver expert financial analysis, personalized advisory services, and cutting-edge stock market strategies to help you grow and secure your wealth. Our client-focused approach, proven results, and commitment to transparency set us apart. With us, you gain insights, confidence, and success in every financial decision. Your growth is our mission.</p>
       </div>
     </div>
 
     <div className="w-full text-center mt-10  flex flex-col gap-5 lg:flex-row justify-center items-center">
       {/* First Inner Div */}
   
-        <div data-aos="zoom-in" className="w-[70%] m-auto md:w-full flex justify-center items-center lg:w-[50%] h-[350px]">
+        <div data-aos="zoom-in" className="w-[70%] m-auto md:w-full flex justify-center items-center lg:w-[50%] lg:h-[350px]">
           <img src="vision.png" alt="Placeholder" />
         </div>
 
@@ -77,7 +77,7 @@ export const About = () => {
       {/* Second Inner Div */}
       <div  className="inner-div-2 text-center lg:w-[70%]">
       <h1 data-aos="fade-up" className={`text-[35px] font-[600]  lg:mb-10 lg:text-[45px]  ${bricolageGrotesque.className} `} > Our Vision</h1>
-      <p data-aos="fade-up"  className={`${Ralewayf.className} lg:text-[18px] `}>At Finzavio, we deliver expert financial analysis, personalized advisory services, and cutting-edge stock market strategies to help you grow and secure your wealth. Our client-focused approach, proven results, and commitment to transparency set us apart. With us, you gain insights, confidence, and success in every financial decision. Your growth is our mission.</p>
+      <p data-aos="fade-up"  className={`${Ralewayf.className} leading-relaxed  lg:text-[18px] `}>At Finzavio, we deliver expert financial analysis, personalized advisory services, and cutting-edge stock market strategies to help you grow and secure your wealth. Our client-focused approach, proven results, and commitment to transparency set us apart. With us, you gain insights, confidence, and success in every financial decision. Your growth is our mission.</p>
       </div>
     </div>
 
