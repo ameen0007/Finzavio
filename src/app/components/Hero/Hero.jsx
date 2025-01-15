@@ -9,7 +9,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 import Button from "../Button";
-import Card from "../card";
+import Card from "../Card";
 
 // Import the Bricolage Grotesque font
 const bricolageGrotesque = Bricolage_Grotesque({
