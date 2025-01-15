@@ -125,38 +125,12 @@
     transition: transform 0.3s ease-in-out;
      /* Slow down the transform effect */
 }
-.btn-3 .items{
-  background-color: rgb(58, 59, 59);
-   
-}
-.btn-3 .items button{
-  font-size: 14px;
-  text-align: center;
-  
-  width: 100%;
-}
-.btn-3 .items {
-  
-  padding: 10px 20px;
-   background-color:#333334 ;
-    border-radius: 11px;
-    color: #0b0b0b;
-    font-size: 14px;
-   text-align: center;
-    color: #f3f3f1;
-    border: 1px solid #6c6c6c;
- 
-    
-}
 
 
 
 
-.btn-3 .items:hover {
-  transform: scale(0.95); /* Smooth scale effect */
-  border: 1px solid #ffda44;
-  transition: all 0.3s ease-in-out; /* Applies transition to all properties */
-}
+
+
 
 @keyframes bottomToTop1 {
   from {
