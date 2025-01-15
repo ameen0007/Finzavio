@@ -78,17 +78,17 @@ export const Hero = () => {
             className={`${Ralewayf.className}  w-full h-9 bottom-to-top1 delay1-6 flex justify-start buttons gap-7 mt-7 text-[#f3f3f1]`}
           >
             <Button
-              className="custom-spotlight-card text-center px-8 py-2 pb-8 cursor-pointer  w-fit  h-auto "
+              className="custom-spotlight-card text-center btn5 px-8 py-2 pb-8 cursor-pointer  w-fit  h-auto "
               // spotlightColor="rgba(0, 229, 255, 0.2)"
             >
-              <h2 className="text-center text-base ">Know More</h2>
+              <h2 className=" text1   text-center text-base ">Know More</h2>
             </Button>
             <Button
-              className="custom-spotlight-card text-center px-8 py-2 pb-8 cursor-pointer  w-fit  h-auto "
+              className="custom-spotlight-card text-center btn5 px-8 py-2 pb-8 cursor-pointer buttons  w-fit  h-auto "
               // spotlightColor="rgba(0, 229, 255, 0.2)"
             >
-              <h2 className="text-center text-base ">
-                Contact <span className="text-[#ffda46]">Us</span>
+              <h2 className="text-center text1 text-base  ">
+                Contact <span className="text-[#ffda46]  ">Us</span>
               </h2>
             </Button>
           </div>

@@ -113,7 +113,7 @@
             drop-shadow(0 0 0px #ffda46)
             drop-shadow(0 0 0px #ffda46)
             drop-shadow(0 0 0px #ffda46);
-            
+
   }
   
   .glow img {
@@ -609,3 +609,21 @@
     animation-delay: 0.6s;
   }
   
+
+  @media screen and (max-width: 502px) {
+      .btn5{
+       
+      }
+      .btn5 .text1{
+        font-size: 13px;
+      }
+  }
+  @media screen and (max-width: 346px) {
+    .btn5{
+      padding-left: 13px;
+      padding-right: 13px;
+    }
+    .btn5 .text1{
+      font-size: 12px;
+    }
+}
