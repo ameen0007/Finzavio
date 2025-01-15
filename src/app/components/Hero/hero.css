@@ -106,6 +106,14 @@
             drop-shadow(0 0 28px #ffda46)
             drop-shadow(0 0 80px #ffda46);
   }
+  #star3{
+    width: 30px;
+    height: 30px;
+    filter: drop-shadow(0 0 0px #ffda46) 
+            drop-shadow(0 0 0px #ffda46)
+            drop-shadow(0 0 0px #ffda46)
+            drop-shadow(0 0 0px #ffda46);
+  }
   
   .glow img {
     width: 100%;

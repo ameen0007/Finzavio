@@ -39,7 +39,7 @@ const Button = ({ children, className = "", spotlightColor = "rgba(255, 255, 255
       onBlur={handleBlur}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`relative rounded-[11px] border border-neutral-800 bg-neutral-900 overflow-hidden  ${className}`}
+      className={`relative rounded-[11px] border-2  border-neutral-800 bg-neutral-900 overflow-hidden  ${className}`}
     >
       <div
         className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out"
